@@ -318,6 +318,17 @@ that asserts nothing about what any line means.
 - Any colour-to-category translation table presented as the map author's intent.
 - Committing the `.graphml` source file. It is all-rights-reserved third-party
   material (§2.1); it stays a local working input, referenced by URL.
+- **Committing the extracted dataset either.** This corrects a contradiction in
+  an earlier draft of this packet, which listed `raw_label` verbatim among the
+  extracted fields while §2.2 forbade republishing the map's node text or
+  structure. Both cannot hold: `data/comparator-systemic-evolution.json`
+  reproduces all 650 labels and the entire edge list, which is republication of
+  the structure wholesale, not the concise evidential summary `RIGHTS.md`
+  permits. The file is therefore generated and `.gitignore`d. The extractor is
+  committed — it is original MIT-licensed software — so anyone holding a copy of
+  the map can rebuild the dataset in one command. If Hadorn and the University
+  of Fribourg grant a compatible licence, the ignore entry comes out and nothing
+  else changes.
 
 ### Named files or areas
 
@@ -327,12 +338,16 @@ that asserts nothing about what any line means.
 
 ### Acceptance checks
 
-- [ ] Output contains exactly 650 node records and 1,320 edge records.
-- [ ] Every edge record has `relation_type: null` and
-      `meaning: "unstated_in_source"`; zero exceptions.
-- [ ] Re-running the script produces a byte-identical file.
-- [ ] `git diff data/public-data.json docs/` is empty after the run.
-- [ ] `make validate` passes on Python 3.12.
+- [x] Output contains exactly 650 node records and 1,320 edge records.
+- [x] Every edge record has `relation_type: null` and
+      `meaning: "unstated_in_source"`; zero exceptions, and the extractor exits
+      non-zero rather than writing if that is ever violated.
+- [x] Re-running the script produces a byte-identical file.
+- [x] `git diff data/public-data.json docs/` is empty after the run.
+- [ ] ~~`make validate` passes~~ — blocked, and not by this packet. The build
+      cannot pass from a clean checkout on any interpreter version; see §3.1.
+      This packet writes nothing the validators read, so it neither causes nor
+      clears that failure.
 - [ ] Human review occurs before merge.
 
 ### Route and model
