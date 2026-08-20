@@ -76,45 +76,68 @@ every edge produced this way.
 
 ## 4. Scopus
 
-### 4.1 Author resolution (T1)
+### 4.1 Syntax rules that govern every query below
 
-Batch the 296 Tier 1 authors into groups of about 25 — long disjunctions become
-unreliable beyond that:
+These are the rules the first draft of this note got wrong. They are stated here
+because each one silently changes or breaks a query rather than raising a clear
+error.
+
+| Rule | Correct | Wrong |
+| --- | --- | --- |
+| `PUBYEAR` takes `IS`, `AFT`, `BEF` — not comparison operators | `PUBYEAR AFT 1969` | `PUBYEAR > 1969` |
+| `AUTHOR-NAME` takes an unquoted `surname, initial`; quoting turns it into a loose phrase and loses the name-variant matching | `AUTHOR-NAME(ashby, w)` | `AUTHOR-NAME("Ashby, W*")` |
+| `AUTHOR-NAME` already expands variants, so a trailing wildcard is unnecessary | `AUTHOR-NAME(ackoff, r)` | `AUTHOR-NAME(ackoff, r*)` |
+| `AUTHLASTNAME` and `REFAUTH` take the bare term unquoted | `AUTHLASTNAME(barney)` | `AUTHLASTNAME("Barney")` |
+| A multi-word surname needs a quoted loose phrase, or splitting across fields | `AUTHLASTNAME("von foerster") AND AUTHFIRST(h)` | `AUTHOR-NAME(von foerster, h)` |
+| `REFPUBYEAR` accepts `IS` only | `REFPUBYEAR IS 1949` | `REFPUBYEAR AFT 1948` |
+| Braces are exact-match; wildcards inside them are literal characters | `{heart-attack}` | `{health care?}` |
+| Straight ASCII quotes only — smart quotes cause parse errors | `"general system theory"` | `“general system theory”` |
+| Parentheses, commas and brackets inside a term break the expression | strip them first | `AUTHOR-NAME("(HCI), H*")` |
+
+Scopus advises a maximum of roughly 50 boolean operators per query, and queries
+over 8,000 characters may need splitting. The generated batches stay at 20
+authors and at most 24 operators.
+
+### 4.2 Author resolution (T1)
+
+Batch the 296 Tier 1 authors into groups of 20:
 
 ```
-AUTHOR-NAME("von Foerster, H*") OR AUTHOR-NAME("Ackoff, R*")
-  OR AUTHOR-NAME("Ashby, W*") OR AUTHOR-NAME("Pask, G*")
-  OR AUTHOR-NAME("Bateson, G*") OR AUTHOR-NAME("Shannon, C*")
-  OR AUTHOR-NAME("Maturana, H*") OR AUTHOR-NAME("Varela, F*")
-  OR AUTHOR-NAME("Luhmann, N*") OR AUTHOR-NAME("Checkland, P*")
+AUTHOR-NAME(ackoff, r) OR AUTHOR-NAME(ashby, w) OR AUTHOR-NAME(pask, g)
+  OR AUTHOR-NAME(bateson, g) OR AUTHOR-NAME(shannon, c)
+  OR AUTHOR-NAME(maturana, h) OR AUTHOR-NAME(varela, f)
+  OR AUTHOR-NAME(luhmann, n) OR AUTHOR-NAME(checkland, p)
+  OR (AUTHLASTNAME("von foerster") AND AUTHFIRST(h))
 ```
 
 Notes:
 
-- Dropping the initial (`AUTHLASTNAME("Ashby")`) widens recall where the
-  indexed form is uncertain. Worth doing for the twenty or so names that matter
-  most.
+- Dropping the initial (`AUTHLASTNAME(ashby)`) widens recall where the indexed
+  form is uncertain. Worth doing for the twenty or so names that matter most —
+  the generated CSV carries this as a separate column.
 - Mononyms and collective pseudonyms — Bourbaki, Cicero, Aristotle — must use
-  `AUTHLASTNAME`; `AUTHOR-NAME` with an initial silently returns nothing.
+  `AUTHLASTNAME`; `AUTHOR-NAME` with an initial returns nothing for them.
+- Diacritics are indexed inconsistently. Seven names here carry them
+  (Poincaré, Gödel, Schrödinger among them); run the ASCII-folded form as a
+  fallback.
 - The export you want carries **Author(s) ID**. That is the disambiguation key;
   the name string is not.
 
-### 4.2 Incoming citations to the pre-1970 canon (T2)
+### 4.3 Incoming citations to the pre-1970 canon (T2)
 
-One query per canonical author, which is the point of §3:
+Three shapes per canonical author, which is the point of §3:
 
 ```
-REFAUTH("Bertalanffy") AND PUBYEAR > 1969
-REFAUTH("Wiener") AND REFPUBYEAR IS 1948
-REFTITLE("general system theory")
-REFTITLE("design for a brain")
-REFAUTH("Ashby") AND REFTITLE("introduction to cybernetics")
+REFAUTH(bertalanffy) AND PUBYEAR AFT 1969
+REFAUTH(bertalanffy) AND REFTITLE("general system theory")
+REFAUTH(bertalanffy) AND REFPUBYEAR IS 1949
+REFAUTH("von foerster") AND REFTITLE("second-order cybernetics")
 ```
 
 Pair `REFAUTH` with `REFTITLE` or `REFPUBYEAR` for the common surnames —
-unqualified `REFAUTH("Miller")` or `REFAUTH("Beer")` is unusable on its own.
+unqualified `REFAUTH(miller)` or `REFAUTH(beer)` is unusable on its own.
 
-### 4.3 Topic sweeps, per stream
+### 4.4 Topic sweeps, per stream
 
 For the concepts that name no person:
 
@@ -126,7 +149,7 @@ TITLE-ABS-KEY("system dynamics" AND "feedback")
 TITLE-ABS-KEY("self-organised criticality" OR "self-organized criticality")
 ```
 
-### 4.4 Export columns
+### 4.5 Export columns
 
 Select all of: `Authors`, `Author(s) ID`, `Title`, `Year`, `Source title`,
 `Volume`, `Issue`, `Pages`, `DOI`, `Link`, `Affiliations`, `Abstract`,
@@ -135,7 +158,7 @@ Select all of: `Authors`, `Author(s) ID`, `Title`, `Year`, `Source title`,
 `References` is the one that does the work. Without it the export cannot produce
 a single citation edge.
 
-### 4.5 Rights
+### 4.6 Rights
 
 Scopus records are licensed to the institution and are not redistributable. Only
 the DOI, year and a resolved public URL may reach `data/`. Abstracts, keyword
@@ -209,9 +232,9 @@ Regenerated from the source map, held outside the repository:
 
 | File | Contents |
 | --- | --- |
-| `authors_to_resolve.csv` | 501 persons: tier, review flag, summed node degree, streams, concepts, source node IDs, a Scopus author query and an OpenAlex author URL |
+| `authors_to_resolve.csv` | 501 persons: tier, review flag, summed node degree, streams, concepts, source node IDs, a Scopus author query, an ASCII-folded fallback, a broader surname-only query and an OpenAlex author URL |
 | `works_to_resolve.csv` | 650 nodes in degree order: stream, concept, persons, year, raw label, a Scopus query and an OpenAlex URL |
-| `scopus_author_batches.txt` | The T1 authors pre-batched into 12 disjunctive queries |
+| `scopus_author_batches.txt` | The T1 authors pre-batched into 15 disjunctive queries of 20, each under the boolean-operator guidance |
 | `scopus_refauth.txt` | `REFAUTH` targets for the pre-1970 canon |
 | `openalex_author_urls.txt` | One resolvable API URL per T1 author |
 
