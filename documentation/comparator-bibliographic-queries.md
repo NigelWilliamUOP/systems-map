@@ -248,7 +248,78 @@ https://api.openalex.org/works?filter=cites:W2043376269&per-page=200&cursor=*
 - Filter by DOI list: `?filter=doi:10.1000/x|10.1000/y`
 - Always send `&mailto=` for the polite pool.
 
-## 6. Suggested order of work
+## 6. What running these queries actually produced
+
+Measured from three Scopus exports run against the author batches in section 4.
+Counts only: no Scopus record, abstract or keyword is reproduced here or
+anywhere in `data/`, per section 4.6.
+
+### 6.1 The pre-1970 reference gap, measured
+
+Section 3 asserted from Elsevier's documentation that cited references are
+indexed only from 1970. A 1,426-document export covering 1845–1978 confirms it
+directly:
+
+| Citing document | Documents | Carrying any reference |
+| --- | --- | --- |
+| pre-1970 | 774 | **1** (0.1%) |
+| 1970 onwards | 652 | 405 (62.1%) |
+
+Half that export could not yield a citation edge at all. The practical
+consequence is a sequencing rule: export the 1970+ slices first. They are where
+the evidence is.
+
+### 6.2 Name-based batching is roughly 90% noise
+
+The same export was about 90% homonyms. The batches pulled in R. K. Pearson
+(inorganic chemistry) for Karl Pearson, D. G. Ashby (carrot fly control) for
+Ross Ashby, J. S. Shannon (mass spectrometry) for Claude Shannon, T. J. Cicero
+(neuropharmacology), and P. Bateson (ethology) for Gregory Bateson. In a larger
+34,879-document pair of exports the most common single venue was the *Journal of
+High Energy Physics*, because a surname batch collides with author lists running
+to thousands of names.
+
+**`Author(s) ID` has to do the disambiguation, not the name string.** That is
+the column to insist on at export time, and the reason section 4.2 asks for it.
+
+A filter on journal and title terms cut 34,879 documents to 1,066 plausibly
+on-topic ones. That ratio should be expected, not treated as a failed export.
+
+### 6.3 W. Ross Ashby is not a clean homonym case
+
+Do not discard Ashby's medical papers as the wrong person. He was a research
+psychiatrist at Barnwood House, and the 1930s–50s papers on cerebral chemistry
+and mental deficiency are plausibly the same man as the cybernetician. Papers on
+carrot fly and beach erosion are not. No regex can make that call: it needs a
+human decision, recorded, and it is a good early test of the reconciliation
+queue in Packet B.
+
+### 6.4 Yield
+
+From 34,883 documents and 6,182,223 reference rows, restricted to the on-topic
+set: 12,609 references naming a canonical figure, of which 561 are
+self-citations and **12,048 are independent**. Most-cited: Bertalanffy (1,477),
+Luhmann (880), M. C. Jackson (866), Checkland (749), Beer (705), Ackoff (556).
+
+A coverage cross-check is the more useful output. Of the 400 most-cited authors
+in the on-topic set, 34 appear in both this atlas and the comparator map, and
+246 appear in neither. The strongest named absences, each with a most-cited
+work, include Matjaž Mulej (dialectical systems theory, the single most-cited
+author in the set), John Sterman (*Business Dynamics*), George Richardson
+(*Feedback Thought in Social Science and Systems Theory*), Donald T. Campbell,
+Ralph Stacey, Markus Schwaninger, Karl Weick and Donald Schön.
+
+That list is a research queue, not a finding. Surnames were resolved to people by
+taking the most frequent form in the reference strings, which conflates people
+who share one: "Scott B." resolved to W. Richard Scott's *Institutions and
+Organizations* rather than Bernard Scott the second-order cybernetician. Each
+entry needs checking before it becomes a candidate.
+
+And the standing rule still applies: every one of these is a **citation**.
+Influence, teaching, collaboration and conceptual dependence remain separate
+claims needing separate evidence.
+
+## 7. Suggested order of work
 
 1. **The 17 dated nodes**, then the top 50 T1 nodes by degree. Small, high-value,
    and it tests the whole pipeline before it is pointed at 650 nodes.
@@ -260,7 +331,7 @@ https://api.openalex.org/works?filter=cites:W2043376269&per-page=200&cursor=*
 5. Everything unresolved stays unresolved and visible. An empty identifier is a
    fact about coverage; a guessed one is a defect.
 
-## 7. Generated working files
+## 8. Generated working files
 
 Regenerated from the source map, held outside the repository:
 
