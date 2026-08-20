@@ -125,17 +125,51 @@ Notes:
 
 ### 4.3 Incoming citations to the pre-1970 canon (T2)
 
-Three shapes per canonical author, which is the point of §3:
+The documented minimal form is a bare term — the Elsevier example is
+`REFAUTH(Wu)` — and it works standalone. Start there and add constraints only if
+the result set is unmanageable:
 
 ```
-REFAUTH(bertalanffy) AND PUBYEAR AFT 1969
-REFAUTH(bertalanffy) AND REFTITLE("general system theory")
+REFAUTH(bertalanffy)
+REF(bertalanffy AND "general system theory")
+REF(bertalanffy AND 1949)
 REFAUTH(bertalanffy) AND REFPUBYEAR IS 1949
-REFAUTH("von foerster") AND REFTITLE("second-order cybernetics")
+REFTITLE("general system theory")
 ```
 
-Pair `REFAUTH` with `REFTITLE` or `REFPUBYEAR` for the common surnames —
-unqualified `REFAUTH(miller)` or `REFAUTH(beer)` is unusable on its own.
+**The `AND` trap.** Scopus documents this distinction explicitly:
+
+- `REF(darwin 1859)` — both terms in the **same** reference.
+- `REF(darwin) AND REF(1859)` — terms may be in **different** references.
+
+So `REFAUTH(x) AND REFTITLE(y)` does not mean *"a reference by x titled y"*. It
+means *"this document cites x somewhere, and cites something titled y
+somewhere"*. That is a correctness fault, not a syntax one: it returns documents
+that cite both independently. Use the grouped `REF( ... AND ... )` form whenever
+the terms must belong to one reference.
+
+Do not add `AND PUBYEAR AFT 1969` to a `REF` query. It is redundant — cited
+references only exist in the index from 1970 — and combining a reference field
+with a document field is the most likely cause of a query being rejected.
+
+Common surnames still need qualifying. Unqualified `REFAUTH(miller)`,
+`REFAUTH(beer)` or `REFAUTH(simon)` returns too much to use, so reach for form B
+or C there.
+
+**If the `REF` family fails entirely** — not recognised, or returning nothing on
+the bare form — it is unavailable on the subscription or interface in use.
+Nothing about the plan depends on it. Use OpenAlex, which does the same job
+without a licence:
+
+```
+https://api.openalex.org/works?search=general+system+theory+bertalanffy
+https://api.openalex.org/works?filter=cites:W2043376269&per-page=200&cursor=*
+```
+
+Resolve the work in the first call, take its ID, list everything citing it in the
+second. For the pre-1970 canon this is the better route regardless, because
+OpenAlex indexes the works themselves where Scopus holds only later documents
+that cite them.
 
 ### 4.4 Topic sweeps, per stream
 
