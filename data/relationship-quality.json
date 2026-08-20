@@ -28,8 +28,8 @@
   },
   "current": {
     "public_entries": 581,
-    "all_nodes": 691,
-    "all_edges": 1826,
+    "all_nodes": 708,
+    "all_edges": 1843,
     "sources": 206,
     "claims": 34,
     "evidence_records": 37,
@@ -84,42 +84,42 @@
   },
   "criteria": {
     "typed": {
-      "passing": 1826,
-      "total": 1826
+      "passing": 1843,
+      "total": 1843
     },
     "directed": {
-      "passing": 1726,
-      "total": 1826,
+      "passing": 1743,
+      "total": 1843,
       "undirected": 100
     },
     "human_readable_phrase": {
-      "passing": 1826,
-      "total": 1826
+      "passing": 1843,
+      "total": 1843
     },
     "explicit_rationale": {
-      "passing": 1527,
-      "total": 1826
+      "passing": 1544,
+      "total": 1843
     },
     "source_identifier": {
-      "passing": 1826,
-      "total": 1826
+      "passing": 1843,
+      "total": 1843
     },
     "locator_present": {
-      "passing": 1423,
-      "total": 1826
+      "passing": 1440,
+      "total": 1843
     },
     "precision_shaped_locator": {
       "passing": 320,
-      "total": 1826,
+      "total": 1843,
       "note": "Conservative text-pattern measure; manual review is still required."
     },
     "epistemic_fields_present": {
-      "passing": 1826,
-      "total": 1826
+      "passing": 1843,
+      "total": 1843
     },
     "generic_related_to": {
-      "passing": 1826,
-      "total": 1826,
+      "passing": 1843,
+      "total": 1843,
       "review_target_count": 0
     },
     "three_or_more_relation_families": {
@@ -2669,13 +2669,13 @@
     "date": "2026-08-14",
     "method": "Exact duplicate triples were inspected individually. Every unlocated legacy candidate and every maintained inferred edge was challenged against its locator and rationale.",
     "before": {
-      "edges": 1844,
+      "edges": 1861,
       "exact_duplicate_triples": 18,
       "legacy_unlocated_candidates": 0,
       "inferred_edges": 0
     },
     "after": {
-      "edges": 1826,
+      "edges": 1843,
       "exact_duplicate_triples": 0,
       "legacy_unlocated_candidates": 0,
       "inferred_edges": 0
@@ -2930,8 +2930,8 @@
       "explicit_doncaster_lineage_entries": 0
     },
     "after": {
-      "nodes": 691,
-      "edges": 1826,
+      "nodes": 708,
+      "edges": 1843,
       "sources": 206,
       "profiles": 123,
       "journeys": 21,

@@ -19,16 +19,16 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "public-data.json"
 COMPARATOR_PATH = ROOT / "data" / "comparator-systemic-evolution.json"
 DOCS = ROOT / "docs"
-PAGE = DOCS / "comparator-systemic-evolution.html"
+PAGE = DOCS / "comparator-prior-maps.html"
 INDEX = DOCS / "index.html"
 SITEMAP = DOCS / "sitemap.xml"
 
 CARD = (
-    '<a class="start-small-card" href="comparator-systemic-evolution.html">'
+    '<a class="start-small-card" href="comparator-prior-maps.html">'
     '<span class="eyebrow">Comparing prior maps</span>'
-    '<strong>The Map of Systemic Evolution</strong>'
-    '<span>A 650-node map of the field, read against this atlas: what it covers that we do not, '
-    'and why none of its 1,320 lines can be published as a relationship.</span></a>'
+    '<strong>Prior maps of the field</strong>'
+    '<span>Two earlier maps read against this atlas: what they cover that we do not, '
+    'and why an unlabelled line cannot be published as a relationship.</span></a>'
 )
 
 STYLE = """.cmp-shell{max-width:1200px;margin:0 auto;padding:1.4rem 1.3rem 5rem}
@@ -110,6 +110,16 @@ def build_page() -> str:
     comparator = json.loads(COMPARATOR_PATH.read_text(encoding="utf-8"))
     data = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     meta = comparator["meta"]
+    atlas_meta = data.get("meta", {})
+    domains = sorted(
+        (n["label"], n.get("description", ""))
+        for n in data.get("nodes", [])
+        if n.get("inclusion_reason") == "comparator_castellani_map"
+    )
+    domain_rows = "".join(
+        f"<tr><th scope=\"row\">{esc(label)}</th><td>{esc(gloss)}</td></tr>"
+        for label, gloss in domains
+    )
     nodes = comparator["nodes"]
     edges = comparator["edges"]
 
@@ -141,16 +151,23 @@ def build_page() -> str:
     worse = sum(1 for row in COMPARISON if row[3] == "cmp-worse")
     WORSE_WORD = {1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five"}.get(worse, str(worse))
 
+    cast_total = n(atlas_meta.get("castellani_map_entry_count", 0))
+    cast_held = n(atlas_meta.get("castellani_map_already_held_count", 0))
+    cast_evo = n(atlas_meta.get("castellani_map_in_systemic_evolution_count", 0))
+    cast_gap = n(atlas_meta.get("castellani_map_gap_count", 0))
+    cast_domains = n(atlas_meta.get("castellani_map_domains_incorporated", 0))
+    cast_people = n(atlas_meta.get("castellani_map_people_queued", 0))
+
     return f"""<!doctype html>
-<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#9f161b"><title>The Map of Systemic Evolution as comparator — The Necessary Tangle</title><meta name="description" content="A public comparison between The Necessary Tangle and the Map of Systemic Evolution: purpose, boundary, categories, the meaning of lines, evidence, and where this atlas performs worse."><link rel="stylesheet" href="assets/styles.css?v=0.16.3-visual"><link rel="stylesheet" href="assets/site-enhancements.css?v=0.16.3-visual"><style>{STYLE}</style></head>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#9f161b"><title>Prior maps of the field — The Necessary Tangle</title><meta name="description" content="The Necessary Tangle read against two earlier maps of the field: purpose, boundary, categories, the meaning of lines, evidence, and where this atlas performs worse."><link rel="stylesheet" href="assets/styles.css?v=0.16.3-visual"><link rel="stylesheet" href="assets/site-enhancements.css?v=0.16.3-visual"><style>{STYLE}</style></head>
 <body>
 <a class="skip-link" href="#cmp-main">Skip to the comparison</a>
 <nav class="cmp-nav" aria-label="Comparator navigation"><a href="index.html#view=home">← The Necessary Tangle</a></nav>
 <main id="cmp-main" class="cmp-shell" tabindex="-1">
 <header class="cmp-head">
 <p class="eyebrow">Comparing prior maps</p>
-<h1>The Map of Systemic Evolution</h1>
-<p>Earlier maps of this field deserve to be read carefully rather than replaced quietly. This page compares one of them with The Necessary Tangle, and records what it does better.</p>
+<h1>Prior maps of the field</h1>
+<p>Earlier maps of this field deserve to be read carefully rather than replaced quietly. This page compares two of them with The Necessary Tangle, and records what they do better.</p>
 </header>
 
 <div class="cmp-grid">
@@ -161,7 +178,7 @@ def build_page() -> str:
 </div>
 
 <section class="cmp-section">
-<h2>What it is</h2>
+<h2>The Map of Systemic Evolution</h2>
 <p>A single large diagram of the descent of the systems sciences, kept in yEd and published by its maintainers at the University of Fribourg. Its own page records a lineage across thirty years and four hands: originated in 1996 by Eric Schwarz in Neuchâtel; extended in 1998 with items drawn from Will Durant's popular history of philosophy; elaborated in 2000–2001 for the International Institute for General Systems Studies; extended in 2016 by Benjamin Hadorn.</p>
 <p>Eric Schwarz appears as a node inside his own map. So does the <em>International Encyclopedia of Systems and Cybernetics</em>. It is a working document that has absorbed its own sources.</p>
 </section>
@@ -217,10 +234,39 @@ def build_page() -> str:
 <p>That is the most useful thing this project could return: a stated meaning for each connection, written where evidence supports one and marked explicitly unstated where it does not.</p>
 </section>
 
+
+<section class="cmp-section">
+<h2>The Map of the Complexity Sciences</h2>
+<p>Brian Castellani's map takes the same problem from the complexity side. Its current web edition carries {cast_total} linked entries, arranged by strand and period, and unlike the map above it gives every entry an outward link to a paper, profile or encyclopaedia article. That single decision makes it far more checkable: a reader can follow any node to something that says why it is there.</p>
+<p>Read against both this atlas and the Map of Systemic Evolution: {cast_held} of its entries are already held here, {cast_evo} appear in the Map of Systemic Evolution, and {cast_gap} appear in neither.</p>
+<div class="cmp-callout">
+<p><strong>Its lines are unlabelled too.</strong> The map groups and positions entries meaningfully, but no line states a relation type, so the same rule applies: nothing here is imported as a relationship.</p>
+</div>
+</section>
+
+<section class="cmp-section">
+<h2>What we took from it</h2>
+<p>The gap runs almost entirely through <em>applied</em> complexity — the domains where the field meets public health, planning, geography and social data. That is a real weakness in this atlas, and {cast_domains} fields are now registered from it:</p>
+<div class="cmp-table-wrap">
+<table class="cmp"><caption class="cmp-sr">Fields incorporated from the Map of the Complexity Sciences</caption>
+<thead><tr><th scope="col">Field</th><th scope="col">What it covers</th></tr></thead>
+<tbody>{domain_rows}</tbody></table>
+</div>
+<p>Each carries one relationship and one only: that it appears in Castellani's map. That is a documentary fact about the map. It is not evidence of influence, endorsement, teaching or conceptual dependence, and the scope note on every one of those {cast_domains} statements says so.</p>
+<p>Each also enters as a research stub rather than a finished entry, so none of them is counted as a developed public entry. The atlas's public figures — entries, connected entries, evidential depth — are unchanged by this pass. Registering a gap is not the same as filling it.</p>
+</section>
+
+<section class="cmp-section">
+<h2>What we did not take, and why</h2>
+<p>The map also names {cast_people} individual contemporary researchers this atlas does not hold. They are recorded as a research queue and left out of the dataset.</p>
+<p>Adding them would have raised the entry count by {cast_people} while adding nothing that could be checked: no source beyond an appearance, no relationship, no account of what each person contributed. That is precisely the coverage inflation the relational-depth programme exists to prevent, and it would have made the atlas measurably worse while appearing to make it bigger. The names are better added one at a time, each with its own evidence.</p>
+</section>
+
 <section class="cmp-section">
 <h2>Rights and acknowledgement</h2>
-<p>The Map of Systemic Evolution is © CyberTech Engineering and the University of Fribourg, all rights reserved, and remains under its own terms. It is cited and described here, not relicensed. Our thanks to Eric Schwarz, the International Institute for General Systems Studies and Benjamin Hadorn, whose work this page compares itself against.</p>
-<p><a href="https://uranos.ch/index.php/research-menu/cybernetcis" target="_blank" rel="noopener">The map's own page</a> · <a href="index.html#view=home">Back to the atlas</a></p>
+<p>The Map of Systemic Evolution is © CyberTech Engineering and the University of Fribourg, all rights reserved, and remains under its own terms. The Map of the Complexity Sciences remains Brian Castellani's. Both are cited and described here, not relicensed.</p>
+<p>Our thanks to Eric Schwarz, the International Institute for General Systems Studies, Benjamin Hadorn and Brian Castellani, whose work this page compares itself against — and which, in the second case, has already corrected a gap in ours.</p>
+<p><a href="https://uranos.ch/index.php/research-menu/cybernetcis" target="_blank" rel="noopener">The Map of Systemic Evolution</a> · <a href="https://www.art-sciencefactory.com/complexity-map_feb09.html" target="_blank" rel="noopener">The Map of the Complexity Sciences</a> · <a href="index.html#view=home">Back to the atlas</a></p>
 </section>
 </main>
 </body>
@@ -230,7 +276,7 @@ def build_page() -> str:
 
 def patch_index() -> None:
     text = INDEX.read_text(encoding="utf-8")
-    if "comparator-systemic-evolution.html" in text:
+    if "comparator-prior-maps.html" in text:
         return
     # Anchor on the last start-small card rather than a named one: later
     # release scripts rewrite which cards appear, so any specific href is
@@ -248,7 +294,7 @@ def patch_index() -> None:
 
 def patch_sitemap() -> None:
     text = SITEMAP.read_text(encoding="utf-8")
-    loc = "https://transduction.systems/comparator-systemic-evolution.html"
+    loc = "https://transduction.systems/comparator-prior-maps.html"
     if loc in text:
         return
     entry = f"  <url>\n    <loc>{loc}</loc>\n    <lastmod>2026-08-20</lastmod>\n  </url>\n"

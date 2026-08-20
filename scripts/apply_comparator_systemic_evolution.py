@@ -21,7 +21,7 @@ DATA_PATH = ROOT / "data" / "public-data.json"
 COMPARATOR_PATH = ROOT / "data" / "comparator-systemic-evolution.json"
 DOCS_ASSETS = ROOT / "docs" / "assets"
 
-PAGE_URL = "https://transduction.systems/comparator-systemic-evolution.html"
+PAGE_URL = "https://transduction.systems/comparator-prior-maps.html"
 REPO_DOC = (
     "https://github.com/antlerboy/the-necessary-tangle/blob/main/"
     "documentation/comparator-systemic-evolution.md"

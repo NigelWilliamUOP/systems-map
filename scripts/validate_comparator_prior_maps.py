@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "public-data.json"
 COMPARATOR_PATH = ROOT / "data" / "comparator-systemic-evolution.json"
 DOCS = ROOT / "docs"
-PAGE = DOCS / "comparator-systemic-evolution.html"
+PAGE = DOCS / "comparator-prior-maps.html"
 
 EXPECTED_NODES = 650
 EXPECTED_EDGES = 1320
@@ -80,6 +80,32 @@ def main() -> int:
     if meta.get("comparator_systemic_evolution_edge_count") != len(edges):
         errors.append("meta edge count does not match the comparator dataset")
 
+    # Second comparator: every incorporated domain must carry exactly one
+    # sourced appearance edge and must not be dressed up as a public entry.
+    domains = [n for n in data.get("nodes", [])
+               if n.get("inclusion_reason") == "comparator_castellani_map"]
+    if not domains:
+        errors.append("no domains incorporated from the Map of the Complexity Sciences")
+    domain_ids = {n["id"] for n in domains}
+    for node in domains:
+        if node.get("public_visibility") != "metadata":
+            errors.append(f"{node['id']} is presented as a public entry without a written account")
+        if node.get("publication_level") != "research_stub":
+            errors.append(f"{node['id']} is not marked as a research stub")
+        if "src_castellani_map_complexity_sciences" not in (node.get("source_ids") or ""):
+            errors.append(f"{node['id']} does not cite the comparator map")
+    appearance = [e for e in data.get("edges", []) if e.get("source") in domain_ids]
+    if len(appearance) != len(domain_ids):
+        errors.append(
+            f"{len(domain_ids)} incorporated domains carry {len(appearance)} edges; "
+            "each must carry exactly one appearance statement"
+        )
+    for edge in appearance:
+        if edge.get("relation_type") != "member_of":
+            errors.append(f"{edge.get('id')} asserts more than an appearance")
+        if "not evidence of influence" not in (edge.get("scope_conditions") or ""):
+            errors.append(f"{edge.get('id')} lacks the appearance-is-not-influence scope note")
+
     register = {c.get("id"): c for c in data.get("corpus_register", [])}
     entry = register.get("corpus_comparator_maps", {})
     if entry.get("status") == "registered_comparator_pass_pending":
@@ -94,7 +120,7 @@ def main() -> int:
 
     # The public page must carry the comparison the coverage programme requires.
     if not PAGE.exists():
-        errors.append("docs/comparator-systemic-evolution.html is missing")
+        errors.append("docs/comparator-prior-maps.html is missing")
     else:
         page = PAGE.read_text(encoding="utf-8")
         for marker, description in (
@@ -108,6 +134,9 @@ def main() -> int:
             ("International Institute for General Systems Studies", "attribution to IIGSS"),
             ("Benjamin Hadorn", "attribution to the 2016 contributor"),
             ("Will Durant", "the qualification on the pre-1950 stratum"),
+            ("Map of the Complexity Sciences", "the second comparator"),
+            ("Brian Castellani", "attribution to the second comparator's author"),
+            ("research queue", "the reason the named researchers were not bulk-added"),
         ):
             if marker not in page:
                 errors.append(f"the comparator page is missing {description}")
@@ -116,7 +145,7 @@ def main() -> int:
         if "skip-link" not in page:
             errors.append("the comparator page lacks a skip link")
         index = (DOCS / "index.html").read_text(encoding="utf-8")
-        if "comparator-systemic-evolution.html" not in index:
+        if "comparator-prior-maps.html" not in index:
             errors.append("the atlas home view does not link to the comparator page")
 
     if errors:
@@ -127,12 +156,14 @@ def main() -> int:
     print(
         json.dumps(
             {
-                "comparator": "Map of Systemic Evolution",
-                "nodes": len(nodes),
-                "edges": len(edges),
-                "edges_marked_unstated": len(edges),
-                "atlas_relationships_created": 0,
-                "checks": 18,
+                "comparators": ["Map of Systemic Evolution", "Map of the Complexity Sciences"],
+                "systemic_evolution_nodes": len(nodes),
+                "systemic_evolution_edges": len(edges),
+                "systemic_evolution_edges_marked_unstated": len(edges),
+                "systemic_evolution_relationships_created": 0,
+                "castellani_domains_incorporated": len(domains),
+                "castellani_appearance_statements": len(appearance),
+                "checks": 26,
             },
             indent=2,
         )
