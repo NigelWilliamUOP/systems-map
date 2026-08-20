@@ -123,7 +123,7 @@ function tick(){
   for(let i=0;i<N.length;i++){const p=N[i];
     for(let j=i+1;j<N.length;j++){const q=N[j];
       let dx=q.x-p.x,dy=q.y-p.y,d2=dx*dx+dy*dy||1,d=Math.sqrt(d2);
-      const f=11000/d2;const ux=dx/d,uy=dy/d;
+      const f=(9000+140*N.length)/d2;const ux=dx/d,uy=dy/d;
       p.vx-=ux*f;p.vy-=uy*f;q.vx+=ux*f;q.vy+=uy*f;}}
   E.forEach(e=>{if(!e.a||!e.b)return;
     let dx=e.b.x-e.a.x,dy=e.b.y-e.a.y,d=Math.sqrt(dx*dx+dy*dy)||1;
@@ -131,7 +131,7 @@ function tick(){
     e.a.vx+=ux*f;e.a.vy+=uy*f;e.b.vx-=ux*f;e.b.vy-=uy*f});
   N.forEach(n=>{n.vx+=(W/2-n.x)*0.0011;n.vy+=(H/2-n.y)*0.0018;
     n.x+=n.vx*=0.82;n.y+=n.vy*=0.82;
-    n.x=Math.max(n.r+6,Math.min(W-n.r-6,n.x));n.y=Math.max(n.r+6,Math.min(H-n.r-6,n.y))});
+    });
 }
 function css(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim()}
 function draw(){
@@ -168,7 +168,28 @@ function draw(){
   ctx.globalAlpha=1;
 }
 let frames=0;
-function loop(){if(frames<620){tick();frames++}draw();requestAnimationFrame(loop)}
+function fit(){
+  // Scale and centre the settled layout so nothing sits under the edge, leaving
+  // room for the labels that hang below each node.
+  // Labels are far wider than the circles they sit under, so the horizontal
+  // margin has to allow for half a label on each side.
+  const PADX=120,PADY=42,BOT=26;
+  let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
+  N.forEach(n=>{x0=Math.min(x0,n.x-n.r);y0=Math.min(y0,n.y-n.r);
+                x1=Math.max(x1,n.x+n.r);y1=Math.max(y1,n.y+n.r+BOT)});
+  const sx=(W-2*PADX)/Math.max(1,x1-x0),sy=(H-2*PADY)/Math.max(1,y1-y0);
+  const k=Math.min(sx,sy,1.6);
+  const cx=(x0+x1)/2,cy=(y0+y1)/2;
+  N.forEach(n=>{n.x=W/2+(n.x-cx)*k;n.y=H/2+(n.y-cy)*k;n.vx=0;n.vy=0});
+}
+function loop(){
+  if(frames<400){
+    tick();frames++;
+    // Re-fit while settling so the map is never seen spilling off the canvas.
+    if(frames>140&&frames%40===0)fit();
+    if(frames===400)fit();
+  }
+  draw();requestAnimationFrame(loop)}
 loop();
 
 function hit(x,y){let best=null,bd=1e9;
