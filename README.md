@@ -24,7 +24,7 @@ The site includes:
 
 ## Status
 
-This is a public alpha. Release 0.16 contains 565 canonical public entries, including 115 developed profiles, 195 sources and 20 guided journeys. Breadth is not presented as completeness, and editorial acceptance is not presented as final consensus.
+This is a public alpha. Release 0.16 contains 581 canonical public entries, including 123 developed profiles, 205 sources and 21 guided journeys. Breadth is not presented as completeness, and editorial acceptance is not presented as final consensus.
 
 Release 0.17 contains 581 canonical public entries, 123 developed profiles, 205 sources and 21 guided journeys. It adds a public submissions-and-responses page, a genuine ‘Surprise me’ route across readable content, and a canon-and-lineage review which develops Michael C. Jackson, Magnus Ramage, Karen Shipp and *Systems Thinkers* while making the atlas's own visibility and identity rules explicit.
 
