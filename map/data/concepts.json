@@ -1,0 +1,2204 @@
+{
+ "meta": {
+  "map": "systems, cybernetics and complexity",
+  "built_from": "Scopus corpus; counts, DOIs and years only",
+  "thresholds": {
+   "min_works": 3,
+   "min_edge_weight": 5,
+   "min_citing_works": 3
+  },
+  "concept_count": 60,
+  "evidenced_concept_count": 43,
+  "edge_count": 517,
+  "on_topic_work_count": 3071
+ },
+ "concepts": [
+  {
+   "id": "concept_cybernetics",
+   "label": "Cybernetics",
+   "aliases": [
+    "cybernetics",
+    "cybernetic"
+   ],
+   "work_count": 159,
+   "first_year": 1975,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.1002/(SICI)1099-1743(199905/06)16:3<203::AID-SRES210>3.0.CO;2-1",
+     "title": "Systemics and cybernetics in a historical perspective",
+     "year": "1999",
+     "cited_by": 94
+    },
+    {
+     "doi": "10.1108/03684920410556007",
+     "title": "Second-order cybernetics: an historical introduction",
+     "year": "2004",
+     "cited_by": 93
+    },
+    {
+     "doi": "10.1007/s12671-017-0736-8",
+     "title": "The Mindful Personality: a Meta-analysis from a Cybernetic Perspective",
+     "year": "2017",
+     "cited_by": 66
+    },
+    {
+     "doi": "10.1002/sdr.400",
+     "title": "System dynamics and cybernetics: A synergetic pair",
+     "year": "2008",
+     "cited_by": 66
+    },
+    {
+     "doi": "10.1006/jtbi.2001.2262",
+     "title": "Cybernetic formulation of the definition of life",
+     "year": "2001",
+     "cited_by": 66
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_second_order_cybernetics",
+   "label": "Second-order cybernetics",
+   "aliases": [
+    "second-order cybernetics",
+    "second order cybernetics",
+    "cybernetics of cybernetics"
+   ],
+   "work_count": 6,
+   "first_year": 1996,
+   "last_year": 2022,
+   "exemplar_works": [
+    {
+     "doi": "10.1108/03684920410556007",
+     "title": "Second-order cybernetics: an historical introduction",
+     "year": "2004",
+     "cited_by": 93
+    },
+    {
+     "doi": "10.1515/semi.1999.127.1-4.169",
+     "title": "Biosemiotics and the foundation of cybersemiotics: Reconceptualizing the insights of ethology, second-order cybernetics,",
+     "year": "1999",
+     "cited_by": 37
+    },
+    {
+     "doi": "10.1002/(sici)1099-1735(199609)13:3<229::aid-sres96>3.0.co;2-b",
+     "title": "From second-order cybernetics to cybersemiotics: A semiotic re-entry into the second-order cybernetics of Heinz von Foer",
+     "year": "1996",
+     "cited_by": 27
+    },
+    {
+     "doi": "10.1515/semi.2005.2005.154-1-4.355",
+     "title": "The construction of information and communication: A cybersemiotic reentry into Heinz von Foerster's metaphysical constr",
+     "year": "2005",
+     "cited_by": 10
+    },
+    {
+     "doi": "10.1007/s10699-020-09721-w",
+     "title": "A Landmark in the History of Science: H. von Foerster’s Cybernetics of Cybernetics (1974)",
+     "year": "2022",
+     "cited_by": 0
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_management_cybernetics",
+   "label": "Management cybernetics",
+   "aliases": [
+    "management cybernetics",
+    "organisational cybernetics",
+    "organizational cybernetics"
+   ],
+   "work_count": 3,
+   "first_year": 1979,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.1080/08920750390198513",
+     "title": "Management cybernetics: A new institutional framework for coastal management",
+     "year": "2003",
+     "cited_by": 11
+    },
+    {
+     "doi": "10.1002/sres.70000",
+     "title": "Integrating Evolutionary Processes With Organisational Cybernetics: Approaching Epistemology Through Metatheory",
+     "year": "2026",
+     "cited_by": 0
+    },
+    {
+     "doi": "10.1016/0377-2217(79)90025-0",
+     "title": "Management cybernetics: a look at the debate",
+     "year": "1979",
+     "cited_by": 0
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_viable_system_model",
+   "label": "Viable System Model",
+   "aliases": [
+    "viable system model",
+    "viable systems model",
+    "vsm"
+   ],
+   "work_count": 13,
+   "first_year": 1994,
+   "last_year": 2022,
+   "exemplar_works": [
+    {
+     "doi": "10.1016/j.ejor.2012.06.032",
+     "title": "Using the Viable System Model (VSM) to structure information processing complexity in disaster response",
+     "year": "2013",
+     "cited_by": 61
+    },
+    {
+     "doi": "10.1007/s10979-005-8485-y",
+     "title": "The viable systems model applied to a national system of innovation to inform policy development",
+     "year": "2005",
+     "cited_by": 48
+    },
+    {
+     "doi": "10.1080/01969722.2016.1209375",
+     "title": "A Test of the Viable System Model: Theoretical Claim vs. Empirical Evidence",
+     "year": "2016",
+     "cited_by": 47
+    },
+    {
+     "doi": "10.1016/j.ejor.2014.11.026",
+     "title": "Application of the Viable System Model to analyse communications structures: A case study of disaster response in Japan",
+     "year": "2015",
+     "cited_by": 33
+    },
+    {
+     "doi": "10.4324/9780429490835",
+     "title": "Sustainable self-governance in businesses and society: The viable system model in action",
+     "year": "2022",
+     "cited_by": 17
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_general_system_theory",
+   "label": "General system theory",
+   "aliases": [
+    "general system theory",
+    "general systems theory"
+   ],
+   "work_count": 113,
+   "first_year": 1973,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.1142/5871",
+     "title": "General systems theory: Problems, perspectives, practice",
+     "year": "2006",
+     "cited_by": 351
+    },
+    {
+     "doi": "10.1111/j.0021-8782.2004.00359.x",
+     "title": "On the role of general system theory for functional neuroimaging",
+     "year": "2004",
+     "cited_by": 139
+    },
+    {
+     "doi": "10.1207/S15327957PSPR0604_07",
+     "title": "A General Systems Theory of Marriage: Nonlinear Difference Equation Modeling of Marital Interaction",
+     "year": "2002",
+     "cited_by": 137
+    },
+    {
+     "doi": "10.1007/BF00694427",
+     "title": "General system theory: Toward a conceptual framework for science and technology education for all",
+     "year": "1993",
+     "cited_by": 101
+    },
+    {
+     "doi": "10.1111/isj.12320",
+     "title": "A possible conceptualization of the information systems (IS) artifact: A general systems theory perspective1",
+     "year": "2021",
+     "cited_by": 77
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_requisite_variety",
+   "label": "Requisite variety",
+   "aliases": [
+    "requisite variety",
+    "law of requisite variety"
+   ],
+   "work_count": 4,
+   "first_year": 1976,
+   "last_year": 2017,
+   "exemplar_works": [
+    {
+     "doi": "10.4135/9781446201084.n16",
+     "title": "Complexity and organization–environment relations: Revisiting Ashby's law of requisite variety",
+     "year": "2011",
+     "cited_by": 95
+    },
+    {
+     "doi": "10.1007/s10955-017-1776-0",
+     "title": "Leveraging Environmental Correlations: The Thermodynamics of Requisite Variety",
+     "year": "2017",
+     "cited_by": 27
+    },
+    {
+     "doi": "10.1108/eb005426",
+     "title": "The architecture of requisite variety: An Empirical Application of Managerial Cybernetics to the Organization of Socio-E",
+     "year": "1976",
+     "cited_by": 4
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_homeostasis",
+   "label": "Homeostasis",
+   "aliases": [
+    "homeostasis",
+    "homeostatic"
+   ],
+   "work_count": 6,
+   "first_year": 1984,
+   "last_year": 2025,
+   "exemplar_works": [
+    {
+     "doi": "10.1007/s12210-012-0187-z",
+     "title": "The GAIA theory: From Lovelock to Margulis. from a homeostatic to a cognitive autopoietic worldview",
+     "year": "2012",
+     "cited_by": 28
+    },
+    {
+     "doi": "10.1002/sres.3850010104",
+     "title": "Equilibrium, entropy and homeostasis: A multidisciplinary legacy",
+     "year": "1984",
+     "cited_by": 16
+    },
+    {
+     "doi": "10.1187/cbe.21-04-0092",
+     "title": "Understanding Homeostatic Regulation: The Role of Relationships and Conditions in Feedback Loop Reasoning",
+     "year": "2022",
+     "cited_by": 11
+    },
+    {
+     "doi": "10.12968/bjon.2011.20.4.232",
+     "title": "Homeostasis 2: Nurses as external agents of homeostatic control",
+     "year": "2011",
+     "cited_by": 6
+    },
+    {
+     "doi": "10.3103/S0147688225700170",
+     "title": "Homen as Equivalent of Consciousness in Artificial Intelligence Systems. Homeostatic Mentality Theory1",
+     "year": "2025",
+     "cited_by": 1
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_feedback",
+   "label": "Feedback",
+   "aliases": [
+    "feedback loop",
+    "negative feedback",
+    "positive feedback",
+    "feedback control"
+   ],
+   "work_count": 4,
+   "first_year": 1978,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.1187/cbe.21-04-0092",
+     "title": "Understanding Homeostatic Regulation: The Role of Relationships and Conditions in Feedback Loop Reasoning",
+     "year": "2022",
+     "cited_by": 11
+    },
+    {
+     "doi": "10.5406/21543682.55.1.02",
+     "title": "Process Philosophy and Complexity Science: Systems Theory, Emergentism, Feedback Loops, and Autopoiesis",
+     "year": "2026",
+     "cited_by": 1
+    },
+    {
+     "doi": "10.1017/9781009437318.034",
+     "title": "Systems Thinking and Complexity in Transitions Research: Understanding System Dynamics, Feedback Loops and Non-linear Ch",
+     "year": "2026",
+     "cited_by": 1
+    },
+    {
+     "doi": "10.1080/03081077808960687",
+     "title": "Problems on feedback control of uncertain systems: A theoretical interpretation",
+     "year": "1978",
+     "cited_by": 1
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_autopoiesis",
+   "label": "Autopoiesis",
+   "aliases": [
+    "autopoiesis",
+    "autopoietic"
+   ],
+   "work_count": 31,
+   "first_year": 1992,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.1111/1467-954X.00367",
+     "title": "Can social systems be autopoietic? Assessing Luhmann's social theory",
+     "year": "2002",
+     "cited_by": 134
+    },
+    {
+     "doi": "10.1016/S0022-5193(03)00034-1",
+     "title": "Autopoietic and (M,R) systems",
+     "year": "2003",
+     "cited_by": 94
+    },
+    {
+     "doi": "10.1007/s11084-012-9297-y",
+     "title": "Autopoiesis 40 years Later. A Review and a Reformulation",
+     "year": "2012",
+     "cited_by": 74
+    },
+    {
+     "doi": "10.1080/03081079208945072",
+     "title": "Autocatakinetics, yes—autopoiesis, no: Steps toward a unified theory of evolutionary ordering",
+     "year": "1992",
+     "cited_by": 50
+    },
+    {
+     "doi": "10.1111/j.1468-4446.2000.00581.x",
+     "title": "Autopoiesis and socialization: On Luhmann's reconceptualization of communication and socialization",
+     "year": "2000",
+     "cited_by": 43
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_self_organisation",
+   "label": "Self-organisation",
+   "aliases": [
+    "self-organisation",
+    "self-organization",
+    "self-organising",
+    "self-organizing"
+   ],
+   "work_count": 76,
+   "first_year": 1973,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.1017/s0954579497001442",
+     "title": "The role of self-organization in the promotion of resilience in maltreated children",
+     "year": "1997",
+     "cited_by": 402
+    },
+    {
+     "doi": "10.1207/S15327957PSPR0604_05",
+     "title": "Control Processes and Self-Organization as Complementary Principles Underlying Behavior",
+     "year": "2002",
+     "cited_by": 248
+    },
+    {
+     "doi": "10.4324/9780203866160",
+     "title": "Managing complex governance systems: Dynamics, self-organization and coevolution in public investments",
+     "year": "2009",
+     "cited_by": 115
+    },
+    {
+     "doi": "10.1109/ENABL.2003.1231441",
+     "title": "The AMAS theory for complex problem solving based on self-organizing cooperative agents",
+     "year": "2003",
+     "cited_by": 105
+    },
+    {
+     "doi": "10.1016/j.plrev.2006.07.003",
+     "title": "Self-organization vs. self-ordering events in life-origin models",
+     "year": "2006",
+     "cited_by": 77
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_emergence",
+   "label": "Emergence",
+   "aliases": [
+    "emergence",
+    "emergent propert",
+    "emergent behaviour",
+    "emergent behavior"
+   ],
+   "work_count": 163,
+   "first_year": 1979,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.1016/S1473-3099(10)70143-2",
+     "title": "Emergence of a new antibiotic resistance mechanism in India, Pakistan, and the UK: A molecular, biological, and epidemio",
+     "year": "2010",
+     "cited_by": 2600
+    },
+    {
+     "doi": "10.1177/0149206316679252",
+     "title": "Embracing Causal Complexity: The Emergence of a Neo-Configurational Perspective",
+     "year": "2017",
+     "cited_by": 1162
+    },
+    {
+     "doi": "10.1056/NEJM199902183400701",
+     "title": "Emergence of vancomycin resistance in Staphylococcus aureus",
+     "year": "1999",
+     "cited_by": 1030
+    },
+    {
+     "doi": "10.1017/CBO9780511734892",
+     "title": "Social emergence: Societies as complex systems",
+     "year": "2005",
+     "cited_by": 890
+    },
+    {
+     "doi": "10.1017/CBO9780511761720",
+     "title": "The causal power of social structures: Emergence, structure and agency",
+     "year": "2010",
+     "cited_by": 781
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_complexity_science",
+   "label": "Complexity science",
+   "aliases": [
+    "complexity science",
+    "complexity sciences",
+    "complexity theory"
+   ],
+   "work_count": 96,
+   "first_year": 1999,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.1287/orsc.10.3.216",
+     "title": "Complexity Theory and Organization Science",
+     "year": "1999",
+     "cited_by": 1646
+    },
+    {
+     "doi": "10.1186/s12916-018-1057-z",
+     "title": "When complexity science meets implementation science: A theoretical and empirical analysis of systems change",
+     "year": "2018",
+     "cited_by": 642
+    },
+    {
+     "doi": "10.1016/S0016-7185(00)00035-X",
+     "title": "Simplifying complexity: A review of complexity theory",
+     "year": "2001",
+     "cited_by": 611
+    },
+    {
+     "doi": "10.1177/0048393107307663",
+     "title": "Complexity theory, systems theory, and multiple intersecting social inequalities",
+     "year": "2007",
+     "cited_by": 451
+    },
+    {
+     "doi": "10.3390/systems7010004",
+     "title": "Review complexity theory: An overview with potential applications for the social sciences",
+     "year": "2019",
+     "cited_by": 284
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_complex_adaptive_systems",
+   "label": "Complex adaptive systems",
+   "aliases": [
+    "complex adaptive system",
+    "complex adaptive systems"
+   ],
+   "work_count": 13,
+   "first_year": 2003,
+   "last_year": 2024,
+   "exemplar_works": [
+    {
+     "doi": "10.1016/j.cities.2021.103141",
+     "title": "Assessment methods of urban system resilience: From the perspective of complex adaptive system theory",
+     "year": "2021",
+     "cited_by": 252
+    },
+    {
+     "doi": "10.1016/j.techfore.2019.119739",
+     "title": "A complex adaptive systems agenda for ecosystem research methodology",
+     "year": "2019",
+     "cited_by": 175
+    },
+    {
+     "doi": "10.1108/DPM-07-2015-0153",
+     "title": "Disaster resilience and complex adaptive systems theory: Finding common grounds for risk reduction",
+     "year": "2016",
+     "cited_by": 91
+    },
+    {
+     "doi": "10.1504/IJTM.2003.003134",
+     "title": "Technology management - A complex adaptive systems approach",
+     "year": "2003",
+     "cited_by": 71
+    },
+    {
+     "doi": "10.1002/bse.3019",
+     "title": "Circular economy business models as resilient complex adaptive systems",
+     "year": "2022",
+     "cited_by": 63
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_chaos_theory",
+   "label": "Chaos theory",
+   "aliases": [
+    "chaos theory",
+    "deterministic chaos",
+    "chaotic dynamics"
+   ],
+   "work_count": 2,
+   "first_year": 1998,
+   "last_year": 2010,
+   "exemplar_works": [
+    {
+     "doi": "10.1177/1066480798062005",
+     "title": "Chaos Theory: Self-Organization and Symbolic Representation in Family Systems",
+     "year": "1998",
+     "cited_by": 6
+    }
+   ],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_self_organised_criticality",
+   "label": "Self-organised criticality",
+   "aliases": [
+    "self-organised criticality",
+    "self-organized criticality"
+   ],
+   "work_count": 2,
+   "first_year": 2015,
+   "last_year": 2017,
+   "exemplar_works": [
+    {
+     "doi": "10.1371/journal.pone.0117465",
+     "title": "Self-organized criticality, plasticity and sensorimotor coupling. Explorations with a neurorobotic model in a behavioura",
+     "year": "2015",
+     "cited_by": 13
+    },
+    {
+     "doi": "10.1007/978-3-319-54546-2",
+     "title": "Self-organized Criticality and Predictability in Atmospheric Flows: The Quantum World of Clouds and Rain",
+     "year": "2017",
+     "cited_by": 10
+    }
+   ],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_network_science",
+   "label": "Network science",
+   "aliases": [
+    "network science",
+    "complex network",
+    "complex networks",
+    "small-world network",
+    "scale-free network"
+   ],
+   "work_count": 9,
+   "first_year": 2006,
+   "last_year": 2023,
+   "exemplar_works": [
+    {
+     "doi": "10.23919/JSEE.2023.000080",
+     "title": "Complex systems and network science: A survey",
+     "year": "2023",
+     "cited_by": 45
+    },
+    {
+     "doi": "10.1021/acs.jmedchem.9b01989",
+     "title": "Drug Research Meets Network Science: Where Are We?",
+     "year": "2020",
+     "cited_by": 44
+    },
+    {
+     "doi": "10.3389/fams.2018.00037",
+     "title": "Understanding the World Economy in Terms of Networks: A Survey of Data-Based Network Science Approaches on Economic Netw",
+     "year": "2018",
+     "cited_by": 21
+    },
+    {
+     "doi": "10.1016/j.compedu.2019.103634",
+     "title": "Students learning pathways in higher blended education: An analysis of complex networks perspective",
+     "year": "2019",
+     "cited_by": 19
+    },
+    {
+     "doi": "10.1016/C2016-0-02288-X",
+     "title": "Air route networks through complex networks theory",
+     "year": "2019",
+     "cited_by": 17
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_agent_based_modelling",
+   "label": "Agent-based modelling",
+   "aliases": [
+    "agent-based model",
+    "agent based model",
+    "agent-based simulation",
+    "multi-agent system",
+    "multiagent system"
+   ],
+   "work_count": 22,
+   "first_year": 2007,
+   "last_year": 2025,
+   "exemplar_works": [
+    {
+     "doi": "10.1016/j.ecolmodel.2011.07.010",
+     "title": "Modeling human decisions in coupled human and natural systems: Review of agent-based models",
+     "year": "2012",
+     "cited_by": 717
+    },
+    {
+     "doi": "10.1080/00045608.2014.910085",
+     "title": "Agent-Based Modeling in Coupled Human and Natural Systems (CHANS): Lessons from a Comparative Analysis",
+     "year": "2014",
+     "cited_by": 88
+    },
+    {
+     "doi": "10.1007/978-90-481-8927-4_7",
+     "title": "Agent-based modeling and complexity",
+     "year": "2012",
+     "cited_by": 42
+    },
+    {
+     "doi": "10.3389/fphys.2011.00020",
+     "title": "Toward a multi-scale computational model of arterial adaptation in hypertension: Verification of a multi-cell agent-base",
+     "year": "2011",
+     "cited_by": 42
+    },
+    {
+     "doi": "10.1016/j.jss.2017.08.038",
+     "title": "Self-organizing multi-agent systems for the control of complex systems",
+     "year": "2017",
+     "cited_by": 30
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_cellular_automata",
+   "label": "Cellular automata",
+   "aliases": [
+    "cellular automat"
+   ],
+   "work_count": 7,
+   "first_year": 2003,
+   "last_year": 2022,
+   "exemplar_works": [
+    {
+     "doi": "10.1016/S0169-2046(02)00218-9",
+     "title": "Modelling dynamic spatial processes: Simulation of urban future scenarios through cellular automata",
+     "year": "2003",
+     "cited_by": 462
+    },
+    {
+     "doi": "10.1063/1.4936702",
+     "title": "Modeling of the competition life cycle using the software complex of cellular automata PyCAlab",
+     "year": "2015",
+     "cited_by": 16
+    },
+    {
+     "doi": "10.1109/ACCESS.2019.2949689",
+     "title": "Simulating Urban Growth Using Cellular Automata Approach (SLEUTH)-A Case Study of Praia City, Cabo Verde",
+     "year": "2019",
+     "cited_by": 10
+    },
+    {
+     "doi": "10.1177/00375497221078936",
+     "title": "Selection of open or closed boundaries in a cellular automata model for heterogeneous non-lane-based traffic",
+     "year": "2022",
+     "cited_by": 8
+    },
+    {
+     "doi": "10.1002/9781118351475.ch4",
+     "title": "Non-Linear Dynamics, Self-Organization and Cellular Automata Models",
+     "year": "2013",
+     "cited_by": 8
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_artificial_life",
+   "label": "Artificial life",
+   "aliases": [
+    "artificial life",
+    "alife"
+   ],
+   "work_count": 4,
+   "first_year": 2012,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.1007/978-3-540-92910-9_53",
+     "title": "Artificial life",
+     "year": "2012",
+     "cited_by": 7
+    },
+    {
+     "doi": "10.1162/artl_a_00427",
+     "title": "Motivations for Artificial Intelligence, for Deep Learning, for ALife: Mortality and Existential Risk",
+     "year": "2024",
+     "cited_by": 5
+    },
+    {
+     "doi": "10.1002/sres.2895",
+     "title": "The system-process view of life from the perspective of systems science and its englightenment to artificial life",
+     "year": "2022",
+     "cited_by": 5
+    },
+    {
+     "doi": "10.1109/ACCESS.2026.3692536",
+     "title": "Intelligence, Learning, and Artificial Life Models: Evolution and Systematic Review",
+     "year": "2026",
+     "cited_by": 0
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_system_dynamics",
+   "label": "System dynamics",
+   "aliases": [
+    "system dynamics",
+    "systems dynamics",
+    "stock and flow"
+   ],
+   "work_count": 91,
+   "first_year": 1977,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.1016/j.ijpe.2017.10.008",
+     "title": "Impact of cloud-based information sharing on hospital supply chain performance: A system dynamics framework",
+     "year": "2018",
+     "cited_by": 191
+    },
+    {
+     "doi": "10.3401/poms.1080.0023",
+     "title": "System dynamics as a structural theory in operations management",
+     "year": "2008",
+     "cited_by": 152
+    },
+    {
+     "doi": "10.1002/(sici)1099-1743(200001/02)17:1<3::aid-sres344>3.0.co;2-7",
+     "title": "Should system dynamics be described as a 'hard' or 'deterministic' systems approach?",
+     "year": "2000",
+     "cited_by": 143
+    },
+    {
+     "doi": "10.1016/j.jclepro.2016.03.032",
+     "title": "Boundary matters: the potential of system dynamics to support sustainability?",
+     "year": "2017",
+     "cited_by": 141
+    },
+    {
+     "doi": "10.1093/jxb/erp375",
+     "title": "Modelling the crop: From system dynamics to systems biology",
+     "year": "2010",
+     "cited_by": 138
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_soft_systems_methodology",
+   "label": "Soft systems methodology",
+   "aliases": [
+    "soft systems methodolog",
+    "soft systems thinking",
+    "ssm"
+   ],
+   "work_count": 11,
+   "first_year": 2003,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.3390/systems7010010",
+     "title": "A bibliographic and visual exploration of the historic impact of soft systems methodology on academic research and theor",
+     "year": "2019",
+     "cited_by": 21
+    },
+    {
+     "doi": "10.1007/s11213-018-9466-7",
+     "title": "Elaborating a Critical Realist Approach to Soft Systems Methodology",
+     "year": "2019",
+     "cited_by": 18
+    },
+    {
+     "doi": "10.1093/oxfordhb/9780199580583.003.0006",
+     "title": "Systems Thinking and Soft Systems Methodology",
+     "year": "2011",
+     "cited_by": 15
+    },
+    {
+     "doi": "10.5220/0006126202880297",
+     "title": "Applying systems thinking onto emergency response planning using soft systems methodology to structure a national act in",
+     "year": "2017",
+     "cited_by": 14
+    },
+    {
+     "doi": "10.12968/bjtr.2003.10.6.13536",
+     "title": "Clinical education: A critical analysis using soft systems methodology",
+     "year": "2003",
+     "cited_by": 9
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_critical_systems_thinking",
+   "label": "Critical systems thinking",
+   "aliases": [
+    "critical systems thinking",
+    "critical systems heuristics",
+    "critical systems practice",
+    "boundary critique"
+   ],
+   "work_count": 19,
+   "first_year": 1990,
+   "last_year": 2025,
+   "exemplar_works": [
+    {
+     "doi": "10.1016/S0377-2217(00)00067-9",
+     "title": "Critical systems thinking and practice",
+     "year": "2001",
+     "cited_by": 166
+    },
+    {
+     "doi": "10.1177/001872679004300104",
+     "title": "Liberating Systems Theory: Toward Critical Systems Thinking",
+     "year": "1990",
+     "cited_by": 80
+    },
+    {
+     "doi": "10.1057/jors.2010.76",
+     "title": "Boundary critique and its implications for conflict prevention",
+     "year": "2011",
+     "cited_by": 77
+    },
+    {
+     "doi": "10.1007/BF01062819",
+     "title": "Testament to conversations on critical systems thinking between two systems practitioners",
+     "year": "1990",
+     "cited_by": 69
+    },
+    {
+     "doi": "10.1007/978-981-15-0720-5_7",
+     "title": "Critical Systems Thinking, Systemic Intervention, and Beyond",
+     "year": "2021",
+     "cited_by": 49
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_systems_thinking",
+   "label": "Systems thinking",
+   "aliases": [
+    "systems thinking"
+   ],
+   "work_count": 377,
+   "first_year": 1974,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.1016/j.ejor.2009.12.019",
+     "title": "A review of the recent contribution of systems thinking to operational research and management science",
+     "year": "2010",
+     "cited_by": 366
+    },
+    {
+     "doi": "10.2105/AJPH.2011.300149",
+     "title": "Complex systems thinking and current impasses in health disparities research",
+     "year": "2011",
+     "cited_by": 363
+    },
+    {
+     "doi": "10.1186/1478-4505-12-51",
+     "title": "The application of systems thinking in health: Why use systems thinking?",
+     "year": "2014",
+     "cited_by": 355
+    },
+    {
+     "doi": "10.1016/C2010-0-66301-2",
+     "title": "Systems thinking: Managing chaos and complexity: A platform for designing business architecture",
+     "year": "2011",
+     "cited_by": 336
+    },
+    {
+     "doi": "10.2105/AJPH.2005.066001",
+     "title": "Practical challenges of systems thinking and modeling in public health",
+     "year": "2006",
+     "cited_by": 322
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_systems_practice",
+   "label": "Systems practice",
+   "aliases": [
+    "systems practice",
+    "systemic practice"
+   ],
+   "work_count": 14,
+   "first_year": 1998,
+   "last_year": 2025,
+   "exemplar_works": [
+    {
+     "doi": "10.1007/978-1-84996-125-7",
+     "title": "Systems practice: How to act in a climate-change world",
+     "year": "2010",
+     "cited_by": 240
+    },
+    {
+     "doi": "10.1007/978-1-4471-7351-9",
+     "title": "Systems Practice: How to Act: In situations of uncertainty and complexity in a climate-change world",
+     "year": "2017",
+     "cited_by": 95
+    },
+    {
+     "doi": "10.1109/ICSMC.2009.5346211",
+     "title": "The conceptagon: A framework for systems thinking and systems practice",
+     "year": "2009",
+     "cited_by": 25
+    },
+    {
+     "doi": "10.1002/sres.2629",
+     "title": "A vision for advancing systems science as a foundation for the systems engineering and systems practice of the future",
+     "year": "2019",
+     "cited_by": 13
+    },
+    {
+     "doi": "10.4324/9780203893159",
+     "title": "Systems practice in the information society",
+     "year": "2009",
+     "cited_by": 11
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_operational_research",
+   "label": "Operational research",
+   "aliases": [
+    "operational research",
+    "operations research",
+    "problem structuring method"
+   ],
+   "work_count": 19,
+   "first_year": 1972,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.1057/jors.1979.22",
+     "title": "The future of operational research is past",
+     "year": "1979",
+     "cited_by": 772
+    },
+    {
+     "doi": "10.1016/j.ejor.2009.12.019",
+     "title": "A review of the recent contribution of systems thinking to operational research and management science",
+     "year": "2010",
+     "cited_by": 366
+    },
+    {
+     "doi": "10.1057/jors.1979.41",
+     "title": "Resurrecting the future of operational research",
+     "year": "1979",
+     "cited_by": 316
+    },
+    {
+     "doi": "10.1080/01605682.2023.2253852",
+     "title": "Operational Research: methods and applications",
+     "year": "2024",
+     "cited_by": 92
+    },
+    {
+     "doi": "10.1016/j.ejor.2017.08.014",
+     "title": "What is Community Operational Research?",
+     "year": "2018",
+     "cited_by": 82
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_cynefin_and_sense_making",
+   "label": "Cynefin and sense-making",
+   "aliases": [
+    "cynefin",
+    "sense-making",
+    "sensemaking"
+   ],
+   "work_count": 2,
+   "first_year": 2012,
+   "last_year": 2018,
+   "exemplar_works": [
+    {
+     "doi": "10.1016/j.indmarman.2017.09.005",
+     "title": "Emergent coopetition from a sensemaking perspective: A multi-level analysis",
+     "year": "2018",
+     "cited_by": 64
+    },
+    {
+     "doi": "10.1108/09534811211199583",
+     "title": "Spiritual episteme: Sensemaking in the framework of organizational spirituality",
+     "year": "2012",
+     "cited_by": 27
+    }
+   ],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_social_systems_theory",
+   "label": "Social systems theory",
+   "aliases": [
+    "social systems theory",
+    "social system theory",
+    "functional differentiation"
+   ],
+   "work_count": 4,
+   "first_year": 1992,
+   "last_year": 2017,
+   "exemplar_works": [
+    {
+     "doi": "10.1002/sres.2146",
+     "title": "The complexity-sustainability trade-off in Niklas Luhmann's social systems theory",
+     "year": "2014",
+     "cited_by": 141
+    },
+    {
+     "doi": "10.1177/0048393107307660",
+     "title": "Luhmann and emergentism: Competing paradigms for social systems theory?",
+     "year": "2007",
+     "cited_by": 63
+    },
+    {
+     "doi": "10.14254/2071-789X.2017/10-2/1",
+     "title": "Socio-economics: The approach of social systems theory in a forty year perspective",
+     "year": "2017",
+     "cited_by": 15
+    },
+    {
+     "doi": "10.1111/j.1752-0606.1992.tb00927.x",
+     "title": "BEYOND LINEARITY AND CIRCULARITY: DECONSTRUCTING SOCIAL SYSTEMS THEORY",
+     "year": "1992",
+     "cited_by": 13
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_sociocybernetics",
+   "label": "Sociocybernetics",
+   "aliases": [
+    "sociocybernetics",
+    "socio-cybernetics"
+   ],
+   "work_count": 14,
+   "first_year": 1984,
+   "last_year": 2025,
+   "exemplar_works": [
+    {
+     "doi": "10.1108/03684929510089321",
+     "title": "The challenge of sociocybernetics",
+     "year": "1995",
+     "cited_by": 55
+    },
+    {
+     "doi": "10.1108/eb005906",
+     "title": "Cybernetics and Social Science: Theories and Research in Sociocybernetics",
+     "year": "1991",
+     "cited_by": 32
+    },
+    {
+     "doi": "10.1177/0011392119837543",
+     "title": "The sociocybernetics of observation and reflexivity",
+     "year": "2019",
+     "cited_by": 7
+    },
+    {
+     "doi": "10.1177/0011392119837573",
+     "title": "Steering the world from where we are: An introduction to the sociocybernetics perspective",
+     "year": "2019",
+     "cited_by": 3
+    },
+    {
+     "doi": "10.5565/rev/athenea.1636",
+     "title": "Sociocybernetics: Tensions between complex systems, social systems and complexity sciences; [Sociocibernética: Tensiones",
+     "year": "2016",
+     "cited_by": 3
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_information_theory",
+   "label": "Information theory",
+   "aliases": [
+    "information theory",
+    "shannon entropy",
+    "channel capacity"
+   ],
+   "work_count": 5,
+   "first_year": 1975,
+   "last_year": 2013,
+   "exemplar_works": [
+    {
+     "doi": "10.1080/03081070802621846",
+     "title": "Ross Ashby's information theory: A bit of history, some solutions to problems, and what we face today",
+     "year": "2009",
+     "cited_by": 47
+    },
+    {
+     "doi": "10.1002/sres.808",
+     "title": "Control information theory: The 'missing link' in the science of cybernetics",
+     "year": "2007",
+     "cited_by": 45
+    },
+    {
+     "doi": "10.1080/00207727508941870",
+     "title": "A relativistic information theory model for general systems lorentz transformation of organizability and structural entr",
+     "year": "1975",
+     "cited_by": 7
+    },
+    {
+     "doi": "10.4324/9780203753026",
+     "title": "The persistence of information theory",
+     "year": "2013",
+     "cited_by": 2
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_second_law_and_entropy",
+   "label": "Second law and entropy",
+   "aliases": [
+    "thermodynamic entropy",
+    "dissipative structure",
+    "far-from-equilibrium",
+    "non-equilibrium thermodynamics"
+   ],
+   "work_count": 3,
+   "first_year": 1986,
+   "last_year": 2012,
+   "exemplar_works": [
+    {
+     "doi": "10.1002/sres.3850030404",
+     "title": "Transformation and regeneration in social systems: A dissipative structure perspective",
+     "year": "1986",
+     "cited_by": 23
+    },
+    {
+     "doi": "10.3390/info3040601",
+     "title": "Fröhlich condensate: Emergence of synergetic dissipative structures in information processing biological and condensed m",
+     "year": "2012",
+     "cited_by": 13
+    },
+    {
+     "doi": "10.1016/0167-9457(91)90015-P",
+     "title": "Self-organization in connectionist models: Associative memory, dissipative structures, and thermodynamic law",
+     "year": "1991",
+     "cited_by": 7
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_cognition_and_enaction",
+   "label": "Cognition and enaction",
+   "aliases": [
+    "enaction",
+    "enactive",
+    "embodied cognition",
+    "structural coupling"
+   ],
+   "work_count": 2,
+   "first_year": 2010,
+   "last_year": 2018,
+   "exemplar_works": [
+    {
+     "doi": "10.4324/9781315169927-21",
+     "title": "Systems Theory, Enaction and Performing Arts",
+     "year": "2018",
+     "cited_by": 3
+    },
+    {
+     "doi": "10.25162/gz-2010-0014",
+     "title": "Operational closure and structural coupling: On the relation of society and environment from a systems theory perspectiv",
+     "year": "2010",
+     "cited_by": 3
+    }
+   ],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_constructivism",
+   "label": "Constructivism",
+   "aliases": [
+    "radical constructivism",
+    "constructivist epistemolog"
+   ],
+   "work_count": 0,
+   "first_year": null,
+   "last_year": null,
+   "exemplar_works": [],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_semiotics",
+   "label": "Semiotics",
+   "aliases": [
+    "semiotics",
+    "biosemiotics",
+    "semiosis"
+   ],
+   "work_count": 4,
+   "first_year": 1999,
+   "last_year": 2023,
+   "exemplar_works": [
+    {
+     "doi": "10.2979/TRA.2006.42.1.78",
+     "title": "Semiosis as an emergent process",
+     "year": "2006",
+     "cited_by": 55
+    },
+    {
+     "doi": "10.1515/semi.1999.127.1-4.169",
+     "title": "Biosemiotics and the foundation of cybersemiotics: Reconceptualizing the insights of ethology, second-order cybernetics,",
+     "year": "1999",
+     "cited_by": 37
+    },
+    {
+     "doi": "10.1515/semi.1999.125.1-3.87",
+     "title": "Semiotics of complex systems and emergence within a simple cell",
+     "year": "1999",
+     "cited_by": 1
+    },
+    {
+     "doi": "10.5040/9781350139435.ch-4",
+     "title": "Systems Theory and Semiotics",
+     "year": "2023",
+     "cited_by": 0
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_hierarchy_theory",
+   "label": "Hierarchy theory",
+   "aliases": [
+    "hierarchy theory",
+    "holon",
+    "holarchy"
+   ],
+   "work_count": 8,
+   "first_year": 1991,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.1080/03081079108935149",
+     "title": "Two forms of hierarchy theory in western discourses",
+     "year": "1991",
+     "cited_by": 36
+    },
+    {
+     "doi": "10.1002/sres.2457",
+     "title": "The Holonic View of Organizations and Firms",
+     "year": "2017",
+     "cited_by": 13
+    },
+    {
+     "doi": "10.1002/sres.1054",
+     "title": "Fostering innovation in medical technology with hierarchy theory: Narratives on emergent clinical solutions",
+     "year": "2010",
+     "cited_by": 9
+    },
+    {
+     "doi": "10.1007/s10845-024-02510-3",
+     "title": "The Meta Holonic Management Tree: review, steps, and roadmap to industrial Cybernetics 5.0",
+     "year": "2025",
+     "cited_by": 6
+    },
+    {
+     "doi": "10.4324/9781032650425",
+     "title": "SYSTEMS THINKING AND ACTION RESEARCH FOR INNOVATION: Theory and Practice of the Process Oriented Holonic (PrOH) Modellin",
+     "year": "2026",
+     "cited_by": 0
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_living_systems_theory",
+   "label": "Living systems theory",
+   "aliases": [
+    "living systems theory",
+    "living system theory"
+   ],
+   "work_count": 7,
+   "first_year": 1989,
+   "last_year": 2014,
+   "exemplar_works": [
+    {
+     "doi": "10.1007/978-94-6209-662-2",
+     "title": "A living systems theory of vocational behavior and development",
+     "year": "2014",
+     "cited_by": 68
+    },
+    {
+     "doi": "10.1002/bs.3830410301",
+     "title": "Living systems theory as a paradigm for organizational behavior: Understanding humans, organizations, and social process",
+     "year": "1996",
+     "cited_by": 60
+    },
+    {
+     "doi": "10.1002/sres.933",
+     "title": "Boundary maintenance in Living Systems Theory and Social Entropy Theory",
+     "year": "2008",
+     "cited_by": 17
+    },
+    {
+     "doi": "10.1002/sres.730",
+     "title": "Bios, a process approach to living system theory. In honour of James and Jessie Miller",
+     "year": "2006",
+     "cited_by": 11
+    },
+    {
+     "doi": "10.1002/sres.3850060404",
+     "title": "Living systems theory: A solution to the problem of closure in information systems",
+     "year": "1989",
+     "cited_by": 5
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_resilience",
+   "label": "Resilience",
+   "aliases": [
+    "resilience",
+    "panarchy",
+    "adaptive cycle"
+   ],
+   "work_count": 224,
+   "first_year": 1996,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.1111/cdev.12205",
+     "title": "Global Perspectives on Resilience in Children and Youth",
+     "year": "2014",
+     "cited_by": 1298
+    },
+    {
+     "doi": "10.5194/nhess-13-2707-2013",
+     "title": "Resilience and disaster risk reduction: An etymological journey",
+     "year": "2013",
+     "cited_by": 1012
+    },
+    {
+     "doi": "10.1007/s10479-020-03640-6",
+     "title": "Viable supply chain model: integrating agility, resilience and sustainability perspectives—lessons from and thinking bey",
+     "year": "2022",
+     "cited_by": 1010
+    },
+    {
+     "doi": "10.1111/jftr.12255",
+     "title": "Resilience Theory and Research on Children and Families: Past, Present, and Promise",
+     "year": "2018",
+     "cited_by": 854
+    },
+    {
+     "doi": "10.1017/S0954579411000198",
+     "title": "Resilience in children threatened by extreme adversity: Frameworks for research, practice, and translational synergy",
+     "year": "2011",
+     "cited_by": 753
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_systems_ecology",
+   "label": "Systems ecology",
+   "aliases": [
+    "systems ecology",
+    "ecosystem model",
+    "energy systems language"
+   ],
+   "work_count": 1,
+   "first_year": 2022,
+   "last_year": 2022,
+   "exemplar_works": [
+    {
+     "doi": "10.1007/978-3-031-06573-6_4",
+     "title": "How Genomes Emerge, Function, and Evolve: Living Systems Emergence—Genotype-Phenotype-Multilism—Genome/Systems Ecology",
+     "year": "2022",
+     "cited_by": 6
+    }
+   ],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_sustainability_and_limits",
+   "label": "Sustainability and limits",
+   "aliases": [
+    "limits to growth",
+    "planetary boundaries",
+    "sustainability transition"
+   ],
+   "work_count": 0,
+   "first_year": null,
+   "last_year": null,
+   "exemplar_works": [],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_socio_technical_systems",
+   "label": "Socio-technical systems",
+   "aliases": [
+    "socio-technical system",
+    "sociotechnical system"
+   ],
+   "work_count": 14,
+   "first_year": 2006,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.1080/00140139.2015.1015623",
+     "title": "Advancing a sociotechnical systems approach to workplace safety – developing the conceptual framework",
+     "year": "2015",
+     "cited_by": 244
+    },
+    {
+     "doi": "10.1515/jhsem-2017-0019",
+     "title": "A resilience engineering approach to integrating human and socio-technical system capacities and processes for national ",
+     "year": "2019",
+     "cited_by": 30
+    },
+    {
+     "doi": "10.1080/00140139.2014.1001445",
+     "title": "Editorial: emerging issues in sociotechnical systems thinking and workplace safety",
+     "year": "2015",
+     "cited_by": 23
+    },
+    {
+     "doi": "10.1016/j.habitatint.2017.05.008",
+     "title": "A systems approach to city design: Exploring the compatibility of sociotechnical systems",
+     "year": "2017",
+     "cited_by": 20
+    },
+    {
+     "doi": "10.1016/j.techsoc.2021.101626",
+     "title": "Managing ethical requirements elicitation of complex socio-technical systems with critical systems thinking: A case of c",
+     "year": "2021",
+     "cited_by": 14
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_systems_engineering",
+   "label": "Systems engineering",
+   "aliases": [
+    "systems engineering",
+    "system of systems"
+   ],
+   "work_count": 33,
+   "first_year": 1984,
+   "last_year": 2025,
+   "exemplar_works": [
+    {
+     "doi": "10.1057/jors.1984.101",
+     "title": "Towards a system of systems methodologies",
+     "year": "1984",
+     "cited_by": 577
+    },
+    {
+     "doi": "10.1109/SYSTEMS.2009.4815800",
+     "title": "Applications of systems thinking for resilience study in maritime transportation system of systems",
+     "year": "2009",
+     "cited_by": 44
+    },
+    {
+     "doi": "10.1109/TSMCA.2010.2048024",
+     "title": "Systomics: Toward a biology of system of systems",
+     "year": "2010",
+     "cited_by": 43
+    },
+    {
+     "doi": "10.1109/JSYST.2011.2139350",
+     "title": "Employing system of systems engineering in China's emergency management",
+     "year": "2011",
+     "cited_by": 22
+    },
+    {
+     "doi": "10.1109/SYSOSE.2015.7151955",
+     "title": "Complex system governance: Theory to practice challenges for system of systems engineering",
+     "year": "2015",
+     "cited_by": 17
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_control_theory",
+   "label": "Control theory",
+   "aliases": [
+    "control theory",
+    "optimal control",
+    "feedback controller"
+   ],
+   "work_count": 2,
+   "first_year": 1987,
+   "last_year": 2008,
+   "exemplar_works": [
+    {
+     "doi": "10.1109/TSMCB.2008.926599",
+     "title": "Issues on stability of ADP feedback controllers for dynamical systems",
+     "year": "2008",
+     "cited_by": 113
+    },
+    {
+     "doi": "10.1016/0025-5564(87)90007-1",
+     "title": "Biochemical systems theory and metabolic control theory: 1. fundamental similarities and differences",
+     "year": "1987",
+     "cited_by": 106
+    }
+   ],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_game_theory",
+   "label": "Game theory",
+   "aliases": [
+    "game theory",
+    "evolutionary game",
+    "prisoner's dilemma"
+   ],
+   "work_count": 3,
+   "first_year": 2006,
+   "last_year": 2024,
+   "exemplar_works": [
+    {
+     "doi": "10.1109/SASO.2018.00012",
+     "title": "Do social norms emerge? the evolution of agents' decisions with the awareness of social values under iterated prisoner's",
+     "year": "2018",
+     "cited_by": 7
+    },
+    {
+     "doi": "10.1007/3-540-34824-7_9",
+     "title": "Automata-based adaptive behavior for economic modelling using game theory",
+     "year": "2006",
+     "cited_by": 6
+    },
+    {
+     "doi": "10.1140/epjb/s10051-024-00809-x",
+     "title": "Two-layer network evolutionary game model applied to complex systems",
+     "year": "2024",
+     "cited_by": 4
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_decision_theory",
+   "label": "Decision theory",
+   "aliases": [
+    "decision theory",
+    "decision analysis",
+    "multi-criteria decision"
+   ],
+   "work_count": 2,
+   "first_year": 2010,
+   "last_year": 2018,
+   "exemplar_works": [
+    {
+     "doi": "10.1002/sres.1016",
+     "title": "The dialectical systems theory's capacity for multi-criteria decision-making",
+     "year": "2010",
+     "cited_by": 21
+    },
+    {
+     "doi": "10.2478/mmcks-2018-0015",
+     "title": "Modeling systems thinking in action among higher education leaders with fuzzy multi-criteria decision making",
+     "year": "2018",
+     "cited_by": 7
+    }
+   ],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_organisational_learning",
+   "label": "Organisational learning",
+   "aliases": [
+    "organisational learning",
+    "organizational learning",
+    "double-loop learning",
+    "learning organisation",
+    "learning organization"
+   ],
+   "work_count": 2,
+   "first_year": 2011,
+   "last_year": 2022,
+   "exemplar_works": [
+    {
+     "doi": "10.1504/IJPOM.2011.038866",
+     "title": "Project-based companies as learning organisations: systems theory perspective",
+     "year": "2011",
+     "cited_by": 12
+    },
+    {
+     "doi": "10.3390/technologies10060117",
+     "title": "Towards a Modern Learning Organization: Human-Centered Digitalization of Lessons Learned Management for Complex Systems ",
+     "year": "2022",
+     "cited_by": 1
+    }
+   ],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_action_research",
+   "label": "Action research",
+   "aliases": [
+    "action research",
+    "participatory action research"
+   ],
+   "work_count": 7,
+   "first_year": 2010,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.1007/s11213-010-9169-1",
+     "title": "The relationship of 'systems thinking' to action research",
+     "year": "2010",
+     "cited_by": 249
+    },
+    {
+     "doi": "10.1080/09650792.2014.997261",
+     "title": "Researching the impact of teacher professional development programmes based on action research, constructivism, and syst",
+     "year": "2015",
+     "cited_by": 22
+    },
+    {
+     "doi": "10.1177/0011392119837576",
+     "title": "Sociocybernetics and action research: Analysis and intervention in complex social problems",
+     "year": "2019",
+     "cited_by": 2
+    },
+    {
+     "doi": "10.4324/9781032650425",
+     "title": "SYSTEMS THINKING AND ACTION RESEARCH FOR INNOVATION: Theory and Practice of the Process Oriented Holonic (PrOH) Modellin",
+     "year": "2026",
+     "cited_by": 0
+    },
+    {
+     "doi": "10.4324/9781315603476-32",
+     "title": "Experiments in Action Research and Human Ecology: Developing a Community of Practice for Rural Resilience Pioneers",
+     "year": "2016",
+     "cited_by": 0
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_knowledge_management",
+   "label": "Knowledge management",
+   "aliases": [
+    "knowledge management",
+    "knowledge creation"
+   ],
+   "work_count": 9,
+   "first_year": 2005,
+   "last_year": 2024,
+   "exemplar_works": [
+    {
+     "doi": "10.1504/IJKMS.2017.087065",
+     "title": "Reflecting upon knowledge management studies: Insights from systems thinking",
+     "year": "2017",
+     "cited_by": 36
+    },
+    {
+     "doi": "10.1109/HICSS.2008.420",
+     "title": "Systems theory and knowledge management systems: The case of Pratt-Whitney Rocketdyne",
+     "year": "2008",
+     "cited_by": 14
+    },
+    {
+     "doi": "10.1108/03684920710749721",
+     "title": "A viable systems perspective to knowledge management",
+     "year": "2007",
+     "cited_by": 13
+    },
+    {
+     "doi": "10.1080/15228053.2009.10856164",
+     "title": "Applying Systems Thinking To Knowledge Management Systems: The Case Of Pratt-Whitney Rocketdyne",
+     "year": "2009",
+     "cited_by": 7
+    },
+    {
+     "doi": "10.1002/sres.2985",
+     "title": "Organisational ambidexterity and knowledge management: A systems perspective towards Smart Model-based Governance",
+     "year": "2024",
+     "cited_by": 4
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_design_thinking",
+   "label": "Design thinking",
+   "aliases": [
+    "design thinking",
+    "systemic design",
+    "design science"
+   ],
+   "work_count": 10,
+   "first_year": 2002,
+   "last_year": 2025,
+   "exemplar_works": [
+    {
+     "doi": "10.1023/A:1019933410857",
+     "title": "Fostering design culture through cultivating the user-designers' design thinking and systems thinking",
+     "year": "2002",
+     "cited_by": 24
+    },
+    {
+     "doi": "10.1017/pds.2024.27",
+     "title": "Human in the loop: revolutionizing industry 5.0 with design thinking and systems thinking",
+     "year": "2024",
+     "cited_by": 17
+    },
+    {
+     "doi": "10.1515/humaff-2018-0025",
+     "title": "Design thinking, system thinking, Grounded Theory, and system dynamics modeling - An integrative methodology for social ",
+     "year": "2018",
+     "cited_by": 8
+    },
+    {
+     "doi": "10.56261/jars.v22.267810",
+     "title": "Exploring Systems Thinking and Systemic Design: Insights from a Summer School Experiment Addressing Urban Health Crises",
+     "year": "2025",
+     "cited_by": 4
+    },
+    {
+     "doi": "10.34190/EIE.21.117",
+     "title": "Entangling corporate innovation, systems thinking and design thinking",
+     "year": "2021",
+     "cited_by": 4
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_human_computer_interaction",
+   "label": "Human-computer interaction",
+   "aliases": [
+    "human-computer interaction",
+    "computer-supported cooperative work",
+    "cscw"
+   ],
+   "work_count": 0,
+   "first_year": null,
+   "last_year": null,
+   "exemplar_works": [],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_coordination_theory",
+   "label": "Coordination theory",
+   "aliases": [
+    "coordination theory",
+    "coordination mechanism"
+   ],
+   "work_count": 0,
+   "first_year": null,
+   "last_year": null,
+   "exemplar_works": [],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_ubiquitous_computing",
+   "label": "Ubiquitous computing",
+   "aliases": [
+    "ubiquitous computing",
+    "pervasive computing",
+    "internet of things"
+   ],
+   "work_count": 5,
+   "first_year": 2011,
+   "last_year": 2024,
+   "exemplar_works": [
+    {
+     "doi": "10.1109/ICSTCC.2017.8107108",
+     "title": "The industrial internet of things and cyber security: An ecological and systemic perspective on security in digital indu",
+     "year": "2017",
+     "cited_by": 17
+    },
+    {
+     "doi": "10.1109/TSMC.2024.3407061",
+     "title": "Redefinition of Digital Twin and Its Situation Awareness Framework Designing Toward Fourth Paradigm for Energy Internet ",
+     "year": "2024",
+     "cited_by": 15
+    },
+    {
+     "doi": "10.13334/j.0258-8013.pcsee.223425",
+     "title": "System Theory on Perception of Energy Internet of Things Based on Digital Twins and Metaverse (II): Virtual Simulation a",
+     "year": "2024",
+     "cited_by": 12
+    },
+    {
+     "doi": "10.1109/ICSTCC.2014.6982436",
+     "title": "Developing the industrial Internet of Things with a network centric approach: A holistic scientific perspective on smart",
+     "year": "2014",
+     "cited_by": 8
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_machine_learning_and_ai",
+   "label": "Machine learning and AI",
+   "aliases": [
+    "artificial intelligence",
+    "machine learning",
+    "neural network",
+    "deep learning"
+   ],
+   "work_count": 18,
+   "first_year": 2009,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.1145/3453172",
+     "title": "Artificial Intelligence for Modeling Complex Systems: Taming the Complexity of Expert Models to Improve Decision Making",
+     "year": "2021",
+     "cited_by": 81
+    },
+    {
+     "doi": "10.1109/LES.2019.2953253",
+     "title": "A Safe, Secure, and Predictable Software Architecture for Deep Learning in Safety-Critical Systems",
+     "year": "2020",
+     "cited_by": 53
+    },
+    {
+     "doi": "10.1103/PhysRevB.100.174408",
+     "title": "Identification of emergent constraints and hidden order in frustrated magnets using tensorial kernel methods of machine ",
+     "year": "2019",
+     "cited_by": 23
+    },
+    {
+     "doi": "10.1109/ACCESS.2020.3040169",
+     "title": "Systems Thinking in Software Projects-an Artificial Neural Network Approach",
+     "year": "2020",
+     "cited_by": 19
+    },
+    {
+     "doi": "10.1080/00207721.2025.2519204",
+     "title": "A survey of system-cybernetic principles in supply chain resilience: viability, artificial intelligence, digital twins, ",
+     "year": "2026",
+     "cited_by": 18
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_cognitive_science",
+   "label": "Cognitive science",
+   "aliases": [
+    "cognitive science",
+    "cognitive architecture"
+   ],
+   "work_count": 2,
+   "first_year": 2007,
+   "last_year": 2020,
+   "exemplar_works": [
+    {
+     "doi": "10.1002/wcs.1525",
+     "title": "Cognitive science as complexity science",
+     "year": "2020",
+     "cited_by": 48
+    },
+    {
+     "doi": "10.1111/j.1467-9744.2006.00818.x",
+     "title": "Peircean approaches to emergent systems in cognitive science and religion",
+     "year": "2007",
+     "cited_by": 6
+    }
+   ],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_evolutionary_theory",
+   "label": "Evolutionary theory",
+   "aliases": [
+    "natural selection",
+    "evolutionary dynamics",
+    "coevolution",
+    "co-evolution"
+   ],
+   "work_count": 8,
+   "first_year": 2006,
+   "last_year": 2025,
+   "exemplar_works": [
+    {
+     "doi": "10.1057/palgrave.jit.2000080",
+     "title": "Using coevolutionary and complexity theories to improve IS alignment: A multi-level approach",
+     "year": "2006",
+     "cited_by": 258
+    },
+    {
+     "doi": "10.4324/9780203866160",
+     "title": "Managing complex governance systems: Dynamics, self-organization and coevolution in public investments",
+     "year": "2009",
+     "cited_by": 115
+    },
+    {
+     "doi": "10.1162/BIOT_a_00030",
+     "title": "Selection Is Entailed by Self-Organization and Natural Selection Is a Special Case",
+     "year": "2010",
+     "cited_by": 24
+    },
+    {
+     "doi": "10.1016/S0742-3322(08)25003-5",
+     "title": "Evolutionary Dynamics of Inter-firm Networks: A Complex Systems Perspective",
+     "year": "2008",
+     "cited_by": 14
+    },
+    {
+     "doi": "10.1080/01969722.2014.945315",
+     "title": "Co-evolution Path Model (CePM): Sustaining enterprises as complex systems on the edge of chaos",
+     "year": "2014",
+     "cited_by": 11
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_dialectical_systems_theory",
+   "label": "Dialectical systems theory",
+   "aliases": [
+    "dialectical systems theory",
+    "requisite holism"
+   ],
+   "work_count": 6,
+   "first_year": 2007,
+   "last_year": 2022,
+   "exemplar_works": [
+    {
+     "doi": "10.1002/sres.810",
+     "title": "Systems theory: A worldview and/or a methodology aimed at requisite holism/realism of humans' thinking, decisions and ac",
+     "year": "2007",
+     "cited_by": 77
+    },
+    {
+     "doi": "10.1002/sres.1016",
+     "title": "The dialectical systems theory's capacity for multi-criteria decision-making",
+     "year": "2010",
+     "cited_by": 21
+    },
+    {
+     "doi": "10.1002/sres.2234",
+     "title": "General Systems Theory Completed Up by Dialectical Systems Theory",
+     "year": "2013",
+     "cited_by": 8
+    },
+    {
+     "doi": "10.1080/01969720902847052",
+     "title": "From division to integration of natural and social sciences by the universal dialectical systems theory",
+     "year": "2009",
+     "cited_by": 7
+    },
+    {
+     "doi": "10.1109/ICoCS.2012.6458598",
+     "title": "Mulej's Dialectical Systems Theory - A proven next step after Bertalanffy's General Systems Theory",
+     "year": "2012",
+     "cited_by": 5
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_grey_systems",
+   "label": "Grey systems",
+   "aliases": [
+    "grey system",
+    "grey systems"
+   ],
+   "work_count": 4,
+   "first_year": 2006,
+   "last_year": 2025,
+   "exemplar_works": [
+    {
+     "doi": "10.1007/978-3-642-16158-2_1",
+     "title": "Introduction to grey systems theory",
+     "year": "2010",
+     "cited_by": 103
+    },
+    {
+     "doi": "10.1016/S1076-5670(05)41002-2",
+     "title": "Solving Problems with Incomplete Information: A Grey Systems Approach",
+     "year": "2006",
+     "cited_by": 46
+    },
+    {
+     "doi": "10.1007/s10699-019-09618-3",
+     "title": "Exploring the Human Cognitive Capacity in Understanding Systems: A Grey Systems Theory Perspective",
+     "year": "2020",
+     "cited_by": 19
+    },
+    {
+     "doi": "10.1007/s10699-024-09945-0",
+     "title": "Exploring the Methodological Foundation of A Systemic Approach in Grey Systems Theory",
+     "year": "2025",
+     "cited_by": 3
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_fuzzy_systems",
+   "label": "Fuzzy systems",
+   "aliases": [
+    "fuzzy set",
+    "fuzzy logic",
+    "fuzzy system"
+   ],
+   "work_count": 2,
+   "first_year": 2014,
+   "last_year": 2020,
+   "exemplar_works": [
+    {
+     "doi": "10.1007/s12351-017-0361-2",
+     "title": "Discrete fuzzy system orbits as a portfolio selection method",
+     "year": "2020",
+     "cited_by": 3
+    },
+    {
+     "doi": "10.3390/systems2040590",
+     "title": "Postmodern fuzzy system theory: A deconstruction approach based on Kabbalah",
+     "year": "2014",
+     "cited_by": 3
+    }
+   ],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_tektology_and_early_systems",
+   "label": "Tektology and early systems",
+   "aliases": [
+    "tektology",
+    "tektologiya"
+   ],
+   "work_count": 3,
+   "first_year": 1996,
+   "last_year": 2023,
+   "exemplar_works": [
+    {
+     "doi": "10.1007/BF02169018",
+     "title": "Back to basics? Tektology and General System Theory (GST)",
+     "year": "1996",
+     "cited_by": 15
+    },
+    {
+     "doi": "10.1002/sres.2918",
+     "title": "Alexander Bogdanov's tektology, anticipating the evolution of social systems control",
+     "year": "2023",
+     "cited_by": 3
+    },
+    {
+     "doi": "10.1002/sres.2933",
+     "title": "The methodology of A. Bogdanov's tektology in the context of modern systems economic theory",
+     "year": "2023",
+     "cited_by": 3
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_boundaries_and_observers",
+   "label": "Boundaries and observers",
+   "aliases": [
+    "boundary judgement",
+    "boundary judgment",
+    "observer dependence",
+    "second-order observation"
+   ],
+   "work_count": 0,
+   "first_year": null,
+   "last_year": null,
+   "exemplar_works": [],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_variety_engineering",
+   "label": "Variety engineering",
+   "aliases": [
+    "variety engineering",
+    "variety attenuat",
+    "variety amplif"
+   ],
+   "work_count": 0,
+   "first_year": null,
+   "last_year": null,
+   "exemplar_works": [],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_recursion",
+   "label": "Recursion",
+   "aliases": [
+    "recursive structure",
+    "recursion level",
+    "recursive organisation",
+    "recursive organization"
+   ],
+   "work_count": 1,
+   "first_year": 2017,
+   "last_year": 2017,
+   "exemplar_works": [
+    {
+     "doi": "10.3389/fpsyg.2017.01695",
+     "title": "Hierarchical recursive organization and the free energy principle: From biological self-organization to the psychoanalyt",
+     "year": "2017",
+     "cited_by": 13
+    }
+   ],
+   "status": "candidate"
+  }
+ ]
+}
