@@ -325,7 +325,7 @@ claims needing separate evidence.
    and it tests the whole pipeline before it is pointed at 650 nodes.
 2. **T2 incoming citations** via `REFAUTH` and OpenAlex `cites:`. This is the
    evidence base for the map's spine.
-3. **T1 author resolution** in batches of 25, cybernetics and general-systems
+3. **T1 author resolution** in batches of 20, cybernetics and general-systems
    streams first, since they overlap most with the existing atlas.
 4. **T3 to authority files.** Do not send these to Scopus.
 5. Everything unresolved stays unresolved and visible. An empty identifier is a

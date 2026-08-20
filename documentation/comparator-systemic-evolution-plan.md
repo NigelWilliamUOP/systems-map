@@ -553,6 +553,46 @@ No comparator edge is promoted *as* a comparator edge. Each promoted statement i
 re-derived from its own source; the GraphML's role is to have suggested where to
 look, and that role is recorded in `inference_method`.
 
+### Worked example: Conant and Ashby 1970 — a verification, not an addition
+
+This case was checked against the atlas to see whether the bibliographic pass
+could supply a missing source. It could not, and the negative result is the
+useful part.
+
+`law_or_principle_conant_ashby_theorem` is already `publication_level: described`
+and `public_visibility: public`, carries four `source_ids` including
+`src_conant_ashby_good_regulator_1970`, and sits on 16 edges — among them
+`described_by` to that source and `authored_by` edges to Roger C. Conant and
+W. Ross Ashby. The source record already holds the DOI
+`10.1080/00207727008920220`, the journal, the 1970 date, both creators, and a
+note that the theorem holds under stated assumptions and a mapping sense of
+"model" which popular summaries omit.
+
+The Scopus record independently reproduces the same DOI, journal, year and
+author pair, and adds a Scopus EID and Author IDs. Every bibliographic field
+matches. Nothing needs changing.
+
+Two things follow, and they set the shape of Packet D:
+
+1. **Corroboration is a result worth recording.** The source is currently marked
+   `review_status: research_pass_needs_editor`. An editor deciding whether to
+   accept it now has independent confirmation of every field from a second
+   database. That is a smaller claim than "new evidence found" and a more
+   honest one.
+
+2. **The bar is what this record already meets.** Exact locator, both creators
+   named, a scope note distinguishing the formal claim from its popular
+   paraphrase. A promoted statement from the comparator work has to arrive in
+   that condition, not merely with a matching title.
+
+The corollary for cohort selection: check the atlas *before* spending a query.
+Several of the map's landmark nodes are likely to be as well covered as this one,
+and the effort belongs where the coverage cross-check in
+`comparator-bibliographic-queries.md` §6.4 found nothing at all — Mulej,
+Sterman, Richardson, Campbell, Stacey, Schwaninger, Weick, Schön.
+
+No write to `data/public-data.json` is proposed by this packet.
+
 Suggested first cohort: the citation spine among the 16 dated landmark works —
 Bertalanffy 1949, Wiener 1948, Bogdanov 1922, Smuts 1926, Cannon 1932, Beer 1972,
 Forrester 1956, Pask 1975, von Foerster on second-order cybernetics, Greif and
