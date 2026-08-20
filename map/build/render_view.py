@@ -19,8 +19,9 @@ payload = {
     "edges": [{"s": x["source"], "t": x["target"], "w": x["weight"],
                "cw": x["citing_work_count"], "sh": x["top_citing_share"],
                "cc": x["concentrated"], "y0": x["first_year"], "y1": x["last_year"],
-               "ev": [{"d": v["citing_doi"], "y": v["citing_year"],
-                       "r": v["reference"][:150]} for v in x["evidence"][:3]]}
+               "ev": [{"d": v["citing_doi"], "e": v.get("citing_eid",""),
+                       "y": v["citing_year"], "r": v["reference"][:150]}
+                      for v in x["evidence"][:3]]}
               for x in edges],
 }
 blob = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
@@ -244,8 +245,9 @@ function showEdge(e){
     (e.cc?'<div class="flag">One citing work supplies '+Math.round(e.sh*100)+
       '% of this line&rsquo;s support. Read it as one author&rsquo;s reading list, not as a property of the field.</div>':'')+
     '<div class="evh">Citations under this line</div>'+
-    e.ev.map(v=>'<div class="ev"><p>'+esc(v.r)+'</p><a href="https://doi.org/'+esc(v.d)+
-      '" target="_blank" rel="noopener">cited by '+esc(v.d)+' ('+esc(v.y)+')</a></div>').join('')+
+    e.ev.map(v=>'<div class="ev"><p>'+esc(v.r)+'</p>'+(v.d?
+      '<a href="https://doi.org/'+esc(v.d)+'" target="_blank" rel="noopener">cited by '+esc(v.d)+' ('+esc(v.y)+')</a>':
+      '<a href="https://www.scopus.com/record/display.uri?eid='+encodeURIComponent(v.e)+'&origin=resultslist" target="_blank" rel="noopener">cited by '+esc(v.e)+' ('+esc(v.y)+')</a>')+'</div>').join('')+
     '<p style="font-size:12.5px;color:var(--muted);margin-top:16px">Counted citation only. Not influence, teaching, agreement, derivation or logical dependence.</p>';
 }
 intro();

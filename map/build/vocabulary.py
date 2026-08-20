@@ -7,10 +7,12 @@ map is decided by evidence in build_map.py.
 """
 from __future__ import annotations
 
-# Concepts named by the prior maps or standard in the field. Each entry is
-# (canonical label, [aliases matched case-insensitively as whole phrases]).
-# Aliases exist to catch spelling variants, not to widen a concept's meaning.
-SEED = [
+# Each entry is (canonical label, [aliases], seeded_from).
+# Aliases catch spelling variants; they never widen a concept's meaning.
+# seeded_from records which map or reading put the concept on the list to be
+# tested. It is provenance for the *question*, never evidence for the answer -
+# only the corpus decides whether a concept reaches the map.
+SEED_V1 = [
     ("Cybernetics", ["cybernetics", "cybernetic"]),
     ("Second-order cybernetics", ["second-order cybernetics", "second order cybernetics",
                                   "cybernetics of cybernetics"]),
@@ -89,6 +91,80 @@ SEED = [
     ("Recursion", ["recursive structure", "recursion level", "recursive organisation",
                    "recursive organization"]),
 ]
+
+# Areas read off the 2021 Map of the Complexity Sciences (Castellani & Gerrits)
+# that the first vocabulary did not test. Castellani's strengths are the applied,
+# computational and social-science strands, which is exactly where our
+# systems-and-cybernetics seed was thin.
+SEED_CASTELLANI = [
+    ("Dynamical systems theory", ["dynamical system", "dynamical systems theory",
+                                  "attractor", "phase space", "bifurcation"]),
+    ("Nonlinear dynamics", ["nonlinear dynamic", "nonlinear system", "non-linear dynamic"]),
+    ("Fractal geometry", ["fractal", "fractal dimension", "self-similar"]),
+    ("Graph theory", ["graph theory", "random graph", "graph-theoretic"]),
+    ("Physics of complex systems", ["statistical physics", "econophysics",
+                                    "physics of complex system", "power law distribution"]),
+    ("Scaling laws", ["scaling law", "allometric scaling", "power-law scaling"]),
+    ("Synergetics", ["synergetics", "order parameter", "slaving principle"]),
+    ("Swarm behaviour", ["swarm intelligence", "swarm behaviour", "swarm behavior",
+                         "flocking", "stigmergy", "ant colony optimi"]),
+    ("Multi-scale modelling", ["multi-scale model", "multiscale model", "multi-scale simulation"]),
+    ("Robustness and control", ["robustness", "robust control", "controllability"]),
+    ("Computational complexity theory", ["computational complexity", "np-complete",
+                                         "algorithmic complexity", "kolmogorov complexity"]),
+    ("Genetic algorithms", ["genetic algorithm", "evolutionary computation",
+                            "evolutionary algorithm"]),
+    ("Connectionism", ["connectionis", "parallel distributed processing", "perceptron"]),
+    ("Robotics and multi-agent systems", ["swarm robotic", "multi-robot", "autonomous agent"]),
+    ("Data mining", ["data mining", "knowledge discovery in database", "pattern discovery"]),
+    ("Big data and data science", ["big data", "data science", "e-science"]),
+    ("Computational social science", ["computational social science", "social simulation",
+                                      "computational sociolog"]),
+    ("Digital social research", ["digital method", "digital sociolog", "digital social science",
+                                 "social media data"]),
+    ("Case-based complexity", ["qualitative comparative analysis", "case-based method",
+                               "configurational compar", "fuzzy set qca", "case-based complexity"]),
+    ("Qualitative and mixed methods", ["mixed methods", "qualitative complexity",
+                                       "interdisciplinary method"]),
+    ("Visual complexity", ["data visualisation", "data visualization", "information visuali",
+                           "visual analytics"]),
+    ("Systems biology", ["systems biology", "gene regulatory network", "metabolic network"]),
+    ("Computational biology and chemistry", ["computational biology", "bioinformatics",
+                                             "computational chemistry", "protein folding"]),
+    ("Biosystems engineering", ["biosystems engineering", "synthetic biology", "bio-inspired"]),
+    ("Complexity and psychology", ["complexity and psychology", "psychological complexity",
+                                   "dynamic systems approach to development"]),
+    ("Ecological systems theory", ["ecological systems theory", "bioecological model",
+                                   "ecological psychology"]),
+    ("Complexity in management and planning", ["complexity in management", "complexity and management",
+                                               "complexity leadership", "complex responsive process"]),
+    ("Economic complexity", ["economic complexity", "complexity economics",
+                             "agent-based computational economics"]),
+    ("Complexity and globalisation", ["global network society", "globalisation and complexity",
+                                      "globalization and complexity", "global system"]),
+    ("Spatial and geographical complexity", ["spatial complexity", "geographic information system",
+                                             "urban complexity", "cities and complexity",
+                                             "spatial simulation"]),
+    ("Complexity policy", ["complexity and policy", "complexity policy", "policy complexity",
+                           "complexity-informed policy"]),
+    ("Complexity political science", ["political complexity", "complexity political science",
+                                      "governance complexity"]),
+    ("Intersectionality", ["intersectionalit", "intersecting inequalit"]),
+    ("Complexity in health and healthcare", ["complexity in healthcare", "complex intervention",
+                                             "health system complexity", "public health complexity"]),
+    ("Complexity in education", ["complexity in education", "educational complexity",
+                                 "complexity and learning"]),
+    ("Philosophy of complexity", ["philosophy of complexity", "critical complexity",
+                                  "general complexity", "restricted complexity"]),
+    ("Applied complexity", ["applied complexity", "complexity in practice",
+                            "complexity-informed"]),
+    ("Systems science", ["systems science", "system science"]),
+]
+
+# One list, with provenance attached.
+SEED = ([(l, a, "seed_v1") for l, a in SEED_V1]
+        + [(l, a, "castellani_gerrits_2021") for l, a in SEED_CASTELLANI])
+
 
 def concept_id(label: str) -> str:
     import re

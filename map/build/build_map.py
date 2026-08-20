@@ -34,7 +34,12 @@ ON_TOPIC = re.compile(
     r"operational research|operations research|system dynamics|soft systems|"
     r"critical systems|complex(ity)? (system|science|theor)|sense-?making|cynefin|"
     r"systems thinking|systems practice|emergen|resilien|panarchy|"
-    r"agent-based|cellular automat|artificial life|network science|complex network",
+    r"agent-based|cellular automat|artificial life|network science|complex network|"
+    r"nonlinear|non-linear|fractal|dynamical system|scaling law|swarm|synergetic|"
+    r"computational social|social simulation|qualitative comparative|case-based|"
+    r"econophysic|economic complexity|complexity polic|complexity and (health|education|"
+    r"management|psycholog|globali)|applied complexity|philosophy of complexity|"
+    r"systems? (biology|science)|data science|big data|multi-?scale",
     re.I,
 )
 OFF_TOPIC = re.compile(
@@ -46,11 +51,11 @@ OFF_TOPIC = re.compile(
 
 def compile_concepts():
     out = []
-    for label, aliases in SEED:
+    for label, aliases, seeded_from in SEED:
         pats = [re.compile(r"(?<![a-z])" + re.escape(a) + r"[a-z]{0,3}(?![a-z])", re.I)
                 for a in aliases]
         out.append({"id": concept_id(label), "label": label, "aliases": aliases,
-                    "patterns": pats})
+                    "seeded_from": seeded_from, "patterns": pats})
     return out
 
 
@@ -129,8 +134,11 @@ def main() -> int:
                 edge_works[k][r["citing_eid"]] += 1
                 if ry:
                     edge_years[k].append(ry)
-                if len(edge_ev[k]) < 5 and r["citing_doi"]:
+                if len(edge_ev[k]) < 5:
+                    # Prefer a DOI, but never drop the evidence for want of one:
+                    # a Scopus EID is still a checkable handle.
                     edge_ev[k].append({"citing_doi": r["citing_doi"],
+                                       "citing_eid": r["citing_eid"],
                                        "citing_year": r["citing_year"],
                                        "reference": r["ref_raw"][:180]})
     print(f"references scanned: {scanned:,}")
@@ -142,6 +150,7 @@ def main() -> int:
         ex = sorted(s["exemplars"], key=lambda t: -t[0])[:5]
         nodes.append({
             "id": c["id"], "label": c["label"], "aliases": c["aliases"],
+            "seeded_from": c["seeded_from"],
             "work_count": s["works"],
             "first_year": min(s["years"]) if s["years"] else None,
             "last_year": max(s["years"]) if s["years"] else None,

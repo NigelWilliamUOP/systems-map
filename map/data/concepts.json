@@ -7,10 +7,10 @@
    "min_edge_weight": 5,
    "min_citing_works": 3
   },
-  "concept_count": 60,
-  "evidenced_concept_count": 43,
-  "edge_count": 517,
-  "on_topic_work_count": 3071
+  "concept_count": 98,
+  "evidenced_concept_count": 61,
+  "edge_count": 820,
+  "on_topic_work_count": 3607
  },
  "concepts": [
   {
@@ -20,6 +20,7 @@
     "cybernetics",
     "cybernetic"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 159,
    "first_year": 1975,
    "last_year": 2026,
@@ -65,6 +66,7 @@
     "second order cybernetics",
     "cybernetics of cybernetics"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 6,
    "first_year": 1996,
    "last_year": 2022,
@@ -110,6 +112,7 @@
     "organisational cybernetics",
     "organizational cybernetics"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 3,
    "first_year": 1979,
    "last_year": 2026,
@@ -143,6 +146,7 @@
     "viable systems model",
     "vsm"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 13,
    "first_year": 1994,
    "last_year": 2022,
@@ -187,6 +191,7 @@
     "general system theory",
     "general systems theory"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 113,
    "first_year": 1973,
    "last_year": 2026,
@@ -231,6 +236,7 @@
     "requisite variety",
     "law of requisite variety"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 4,
    "first_year": 1976,
    "last_year": 2017,
@@ -263,6 +269,7 @@
     "homeostasis",
     "homeostatic"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 6,
    "first_year": 1984,
    "last_year": 2025,
@@ -309,6 +316,7 @@
     "positive feedback",
     "feedback control"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 4,
    "first_year": 1978,
    "last_year": 2026,
@@ -347,6 +355,7 @@
     "autopoiesis",
     "autopoietic"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 31,
    "first_year": 1992,
    "last_year": 2026,
@@ -393,6 +402,7 @@
     "self-organising",
     "self-organizing"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 76,
    "first_year": 1973,
    "last_year": 2026,
@@ -439,6 +449,7 @@
     "emergent behaviour",
     "emergent behavior"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 163,
    "first_year": 1979,
    "last_year": 2026,
@@ -484,6 +495,7 @@
     "complexity sciences",
     "complexity theory"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 96,
    "first_year": 1999,
    "last_year": 2026,
@@ -528,9 +540,10 @@
     "complex adaptive system",
     "complex adaptive systems"
    ],
-   "work_count": 13,
-   "first_year": 2003,
-   "last_year": 2024,
+   "seeded_from": "seed_v1",
+   "work_count": 15,
+   "first_year": 1998,
+   "last_year": 2025,
    "exemplar_works": [
     {
      "doi": "10.1016/j.cities.2021.103141",
@@ -551,16 +564,16 @@
      "cited_by": 91
     },
     {
+     "doi": "10.1007/s100219900036",
+     "title": "Use and analysis of complex adaptive systems in ecosystem science: Overview of special section",
+     "year": "1998",
+     "cited_by": 85
+    },
+    {
      "doi": "10.1504/IJTM.2003.003134",
      "title": "Technology management - A complex adaptive systems approach",
      "year": "2003",
      "cited_by": 71
-    },
-    {
-     "doi": "10.1002/bse.3019",
-     "title": "Circular economy business models as resilient complex adaptive systems",
-     "year": "2022",
-     "cited_by": 63
     }
    ],
    "status": "evidenced"
@@ -573,10 +586,23 @@
     "deterministic chaos",
     "chaotic dynamics"
    ],
-   "work_count": 2,
+   "seeded_from": "seed_v1",
+   "work_count": 4,
    "first_year": 1998,
    "last_year": 2010,
    "exemplar_works": [
+    {
+     "doi": "10.1002/j.1556-6678.2009.tb00555.x",
+     "title": "Chaos theory as a model for life transitions counseling: Nonlinear dynamics and life's changes",
+     "year": "2009",
+     "cited_by": 45
+    },
+    {
+     "doi": "10.7150/ijms.4.164",
+     "title": "Cancer control through principles of systems science, complexity, and chaos theory: A model",
+     "year": "2007",
+     "cited_by": 29
+    },
     {
      "doi": "10.1177/1066480798062005",
      "title": "Chaos Theory: Self-Organization and Symbolic Representation in Family Systems",
@@ -584,7 +610,7 @@
      "cited_by": 6
     }
    ],
-   "status": "candidate"
+   "status": "evidenced"
   },
   {
    "id": "concept_self_organised_criticality",
@@ -593,6 +619,7 @@
     "self-organised criticality",
     "self-organized criticality"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 2,
    "first_year": 2015,
    "last_year": 2017,
@@ -622,6 +649,7 @@
     "small-world network",
     "scale-free network"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 9,
    "first_year": 2006,
    "last_year": 2023,
@@ -669,6 +697,7 @@
     "multi-agent system",
     "multiagent system"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 22,
    "first_year": 2007,
    "last_year": 2025,
@@ -712,6 +741,7 @@
    "aliases": [
     "cellular automat"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 7,
    "first_year": 2003,
    "last_year": 2022,
@@ -756,6 +786,7 @@
     "artificial life",
     "alife"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 4,
    "first_year": 2012,
    "last_year": 2026,
@@ -795,6 +826,7 @@
     "systems dynamics",
     "stock and flow"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 91,
    "first_year": 1977,
    "last_year": 2026,
@@ -840,6 +872,7 @@
     "soft systems thinking",
     "ssm"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 11,
    "first_year": 2003,
    "last_year": 2026,
@@ -886,6 +919,7 @@
     "critical systems practice",
     "boundary critique"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 19,
    "first_year": 1990,
    "last_year": 2025,
@@ -929,6 +963,7 @@
    "aliases": [
     "systems thinking"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 377,
    "first_year": 1974,
    "last_year": 2026,
@@ -973,6 +1008,7 @@
     "systems practice",
     "systemic practice"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 14,
    "first_year": 1998,
    "last_year": 2025,
@@ -1018,6 +1054,7 @@
     "operations research",
     "problem structuring method"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 19,
    "first_year": 1972,
    "last_year": 2026,
@@ -1063,6 +1100,7 @@
     "sense-making",
     "sensemaking"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 2,
    "first_year": 2012,
    "last_year": 2018,
@@ -1090,6 +1128,7 @@
     "social system theory",
     "functional differentiation"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 4,
    "first_year": 1992,
    "last_year": 2017,
@@ -1128,6 +1167,7 @@
     "sociocybernetics",
     "socio-cybernetics"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 14,
    "first_year": 1984,
    "last_year": 2025,
@@ -1173,6 +1213,7 @@
     "shannon entropy",
     "channel capacity"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 5,
    "first_year": 1975,
    "last_year": 2013,
@@ -1213,6 +1254,7 @@
     "far-from-equilibrium",
     "non-equilibrium thermodynamics"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 3,
    "first_year": 1986,
    "last_year": 2012,
@@ -1247,10 +1289,17 @@
     "embodied cognition",
     "structural coupling"
    ],
-   "work_count": 2,
+   "seeded_from": "seed_v1",
+   "work_count": 3,
    "first_year": 2010,
    "last_year": 2018,
    "exemplar_works": [
+    {
+     "doi": "10.3389/fpsyg.2014.01425",
+     "title": "Multiscale enaction model (MEM): The case of complexity and \"context-sensitivity\" in vision",
+     "year": "2014",
+     "cited_by": 7
+    },
     {
      "doi": "10.4324/9781315169927-21",
      "title": "Systems Theory, Enaction and Performing Arts",
@@ -1264,7 +1313,7 @@
      "cited_by": 3
     }
    ],
-   "status": "candidate"
+   "status": "evidenced"
   },
   {
    "id": "concept_constructivism",
@@ -1273,6 +1322,7 @@
     "radical constructivism",
     "constructivist epistemolog"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 0,
    "first_year": null,
    "last_year": null,
@@ -1287,6 +1337,7 @@
     "biosemiotics",
     "semiosis"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 4,
    "first_year": 1999,
    "last_year": 2023,
@@ -1326,6 +1377,7 @@
     "holon",
     "holarchy"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 8,
    "first_year": 1991,
    "last_year": 2026,
@@ -1370,6 +1422,7 @@
     "living systems theory",
     "living system theory"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 7,
    "first_year": 1989,
    "last_year": 2014,
@@ -1415,6 +1468,7 @@
     "panarchy",
     "adaptive cycle"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 224,
    "first_year": 1996,
    "last_year": 2026,
@@ -1460,8 +1514,9 @@
     "ecosystem model",
     "energy systems language"
    ],
-   "work_count": 1,
-   "first_year": 2022,
+   "seeded_from": "seed_v1",
+   "work_count": 3,
+   "first_year": 2021,
    "last_year": 2022,
    "exemplar_works": [
     {
@@ -1469,9 +1524,21 @@
      "title": "How Genomes Emerge, Function, and Evolve: Living Systems Emergence—Genotype-Phenotype-Multilism—Genome/Systems Ecology",
      "year": "2022",
      "cited_by": 6
+    },
+    {
+     "doi": "10.1007/978-981-15-0720-5_78",
+     "title": "Relational Systems Ecology: Holistic Ecology and Causal Closure",
+     "year": "2021",
+     "cited_by": 3
+    },
+    {
+     "doi": "10.1007/978-981-15-0720-5_77",
+     "title": "Systems Ecology and Limits to Growth: History, Models, and Present Status: History, Models and Present Status",
+     "year": "2021",
+     "cited_by": 0
     }
    ],
-   "status": "candidate"
+   "status": "evidenced"
   },
   {
    "id": "concept_sustainability_and_limits",
@@ -1481,10 +1548,18 @@
     "planetary boundaries",
     "sustainability transition"
    ],
-   "work_count": 0,
-   "first_year": null,
-   "last_year": null,
-   "exemplar_works": [],
+   "seeded_from": "seed_v1",
+   "work_count": 1,
+   "first_year": 2021,
+   "last_year": 2021,
+   "exemplar_works": [
+    {
+     "doi": "10.1007/978-981-15-0720-5_77",
+     "title": "Systems Ecology and Limits to Growth: History, Models, and Present Status: History, Models and Present Status",
+     "year": "2021",
+     "cited_by": 0
+    }
+   ],
    "status": "candidate"
   },
   {
@@ -1494,6 +1569,7 @@
     "socio-technical system",
     "sociotechnical system"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 14,
    "first_year": 2006,
    "last_year": 2026,
@@ -1538,7 +1614,8 @@
     "systems engineering",
     "system of systems"
    ],
-   "work_count": 33,
+   "seeded_from": "seed_v1",
+   "work_count": 37,
    "first_year": 1984,
    "last_year": 2025,
    "exemplar_works": [
@@ -1561,16 +1638,16 @@
      "cited_by": 43
     },
     {
-     "doi": "10.1109/JSYST.2011.2139350",
-     "title": "Employing system of systems engineering in China's emergency management",
-     "year": "2011",
-     "cited_by": 22
+     "doi": "10.1007/s11518-019-5440-x",
+     "title": "A Historical Perspective on Development of Systems Engineering Discipline: A Review and Analysis",
+     "year": "2020",
+     "cited_by": 30
     },
     {
-     "doi": "10.1109/SYSOSE.2015.7151955",
-     "title": "Complex system governance: Theory to practice challenges for system of systems engineering",
-     "year": "2015",
-     "cited_by": 17
+     "doi": "10.1007/s11518-016-5315-3",
+     "title": "A contribution to the scientific foundations of systems engineering: Solution spaces and requirements",
+     "year": "2017",
+     "cited_by": 27
     }
    ],
    "status": "evidenced"
@@ -1583,6 +1660,7 @@
     "optimal control",
     "feedback controller"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 2,
    "first_year": 1987,
    "last_year": 2008,
@@ -1610,6 +1688,7 @@
     "evolutionary game",
     "prisoner's dilemma"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 3,
    "first_year": 2006,
    "last_year": 2024,
@@ -1643,6 +1722,7 @@
     "decision analysis",
     "multi-criteria decision"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 2,
    "first_year": 2010,
    "last_year": 2018,
@@ -1672,6 +1752,7 @@
     "learning organisation",
     "learning organization"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 2,
    "first_year": 2011,
    "last_year": 2022,
@@ -1698,6 +1779,7 @@
     "action research",
     "participatory action research"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 7,
    "first_year": 2010,
    "last_year": 2026,
@@ -1742,7 +1824,8 @@
     "knowledge management",
     "knowledge creation"
    ],
-   "work_count": 9,
+   "seeded_from": "seed_v1",
+   "work_count": 10,
    "first_year": 2005,
    "last_year": 2024,
    "exemplar_works": [
@@ -1787,7 +1870,8 @@
     "systemic design",
     "design science"
    ],
-   "work_count": 10,
+   "seeded_from": "seed_v1",
+   "work_count": 11,
    "first_year": 2002,
    "last_year": 2025,
    "exemplar_works": [
@@ -1832,6 +1916,7 @@
     "computer-supported cooperative work",
     "cscw"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 0,
    "first_year": null,
    "last_year": null,
@@ -1845,6 +1930,7 @@
     "coordination theory",
     "coordination mechanism"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 0,
    "first_year": null,
    "last_year": null,
@@ -1859,6 +1945,7 @@
     "pervasive computing",
     "internet of things"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 5,
    "first_year": 2011,
    "last_year": 2024,
@@ -1899,10 +1986,17 @@
     "neural network",
     "deep learning"
    ],
-   "work_count": 18,
-   "first_year": 2009,
+   "seeded_from": "seed_v1",
+   "work_count": 24,
+   "first_year": 2006,
    "last_year": 2026,
    "exemplar_works": [
+    {
+     "doi": "10.1111/j.1742-4658.2006.05136.x",
+     "title": "Metabolomics, modelling and machine learning in systems biology - Towards an understanding of the languages of cells: De",
+     "year": "2006",
+     "cited_by": 144
+    },
     {
      "doi": "10.1145/3453172",
      "title": "Artificial Intelligence for Modeling Complex Systems: Taming the Complexity of Expert Models to Improve Decision Making",
@@ -1916,22 +2010,16 @@
      "cited_by": 53
     },
     {
-     "doi": "10.1103/PhysRevB.100.174408",
-     "title": "Identification of emergent constraints and hidden order in frustrated magnets using tensorial kernel methods of machine ",
-     "year": "2019",
-     "cited_by": 23
+     "doi": "10.1007/s13132-020-00703-8",
+     "title": "Combining Big Data and Artificial Intelligence for Managing Collective Knowledge in Unpredictable Environment—Insights f",
+     "year": "2021",
+     "cited_by": 48
     },
     {
-     "doi": "10.1109/ACCESS.2020.3040169",
-     "title": "Systems Thinking in Software Projects-an Artificial Neural Network Approach",
-     "year": "2020",
-     "cited_by": 19
-    },
-    {
-     "doi": "10.1080/00207721.2025.2519204",
-     "title": "A survey of system-cybernetic principles in supply chain resilience: viability, artificial intelligence, digital twins, ",
-     "year": "2026",
-     "cited_by": 18
+     "doi": "10.1016/j.envsoft.2023.105713",
+     "title": "Modeling agent decision and behavior in the light of data science and artificial intelligence",
+     "year": "2023",
+     "cited_by": 38
     }
    ],
    "status": "evidenced"
@@ -1943,6 +2031,7 @@
     "cognitive science",
     "cognitive architecture"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 2,
    "first_year": 2007,
    "last_year": 2020,
@@ -1971,6 +2060,7 @@
     "coevolution",
     "co-evolution"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 8,
    "first_year": 2006,
    "last_year": 2025,
@@ -2015,7 +2105,8 @@
     "dialectical systems theory",
     "requisite holism"
    ],
-   "work_count": 6,
+   "seeded_from": "seed_v1",
+   "work_count": 7,
    "first_year": 2007,
    "last_year": 2022,
    "exemplar_works": [
@@ -2059,7 +2150,8 @@
     "grey system",
     "grey systems"
    ],
-   "work_count": 4,
+   "seeded_from": "seed_v1",
+   "work_count": 5,
    "first_year": 2006,
    "last_year": 2025,
    "exemplar_works": [
@@ -2074,6 +2166,12 @@
      "title": "Solving Problems with Incomplete Information: A Grey Systems Approach",
      "year": "2006",
      "cited_by": 46
+    },
+    {
+     "doi": "10.1002/9781119036821.ch4",
+     "title": "Grey System: Thinking, Methods, and Models with Applications",
+     "year": "2015",
+     "cited_by": 21
     },
     {
      "doi": "10.1007/s10699-019-09618-3",
@@ -2098,6 +2196,7 @@
     "fuzzy logic",
     "fuzzy system"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 2,
    "first_year": 2014,
    "last_year": 2020,
@@ -2124,6 +2223,7 @@
     "tektology",
     "tektologiya"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 3,
    "first_year": 1996,
    "last_year": 2023,
@@ -2158,6 +2258,7 @@
     "observer dependence",
     "second-order observation"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 0,
    "first_year": null,
    "last_year": null,
@@ -2172,6 +2273,7 @@
     "variety attenuat",
     "variety amplif"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 0,
    "first_year": null,
    "last_year": null,
@@ -2187,6 +2289,7 @@
     "recursive organisation",
     "recursive organization"
    ],
+   "seeded_from": "seed_v1",
    "work_count": 1,
    "first_year": 2017,
    "last_year": 2017,
@@ -2199,6 +2302,1085 @@
     }
    ],
    "status": "candidate"
+  },
+  {
+   "id": "concept_dynamical_systems_theory",
+   "label": "Dynamical systems theory",
+   "aliases": [
+    "dynamical system",
+    "dynamical systems theory",
+    "attractor",
+    "phase space",
+    "bifurcation"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 23,
+   "first_year": 1989,
+   "last_year": 2025,
+   "exemplar_works": [
+    {
+     "doi": "10.1002/sres.3850060302",
+     "title": "Emergent attractors and the law of maximum entropy production: Foundations to a theory of general evolution",
+     "year": "1989",
+     "cited_by": 193
+    },
+    {
+     "doi": "10.1109/TSMCB.2008.926599",
+     "title": "Issues on stability of ADP feedback controllers for dynamical systems",
+     "year": "2008",
+     "cited_by": 113
+    },
+    {
+     "doi": "10.1080/00220973.2019.1566199",
+     "title": "Education is a Complex Dynamical System: Challenges for Research",
+     "year": "2020",
+     "cited_by": 69
+    },
+    {
+     "doi": "10.1016/j.dr.2005.10.002",
+     "title": "Dynamical systems approaches to emotional development",
+     "year": "2005",
+     "cited_by": 59
+    },
+    {
+     "doi": "10.1093/biolinnean/blac060",
+     "title": "The meaning and origin of goal-directedness: A dynamical systems perspective",
+     "year": "2023",
+     "cited_by": 37
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_nonlinear_dynamics",
+   "label": "Nonlinear dynamics",
+   "aliases": [
+    "nonlinear dynamic",
+    "nonlinear system",
+    "non-linear dynamic"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 14,
+   "first_year": 1988,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.1142/6253",
+     "title": "Foundations of Complex Systems: Nonlinear Dynamics, Statistical Physics, Information and Prediction",
+     "year": "2007",
+     "cited_by": 133
+    },
+    {
+     "doi": "10.1017/CBO9781139058544.002",
+     "title": "Introduction to nonlinear dynamics and complexity",
+     "year": "2011",
+     "cited_by": 77
+    },
+    {
+     "doi": "10.1002/j.1556-6678.2009.tb00555.x",
+     "title": "Chaos theory as a model for life transitions counseling: Nonlinear dynamics and life's changes",
+     "year": "2009",
+     "cited_by": 45
+    },
+    {
+     "doi": "10.1890/12-0312.1",
+     "title": "Bayesian learning and predictability in a stochastic nonlinear dynamical model",
+     "year": "2013",
+     "cited_by": 35
+    },
+    {
+     "doi": "10.1037/0736-9735.17.4.750",
+     "title": "The organizing forces of contemporary psychoanalysis: Reflections on nonlinear dynamic systems theory",
+     "year": "2000",
+     "cited_by": 28
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_fractal_geometry",
+   "label": "Fractal geometry",
+   "aliases": [
+    "fractal",
+    "fractal dimension",
+    "self-similar"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 22,
+   "first_year": 1985,
+   "last_year": 2024,
+   "exemplar_works": [
+    {
+     "doi": "10.5751/ES-06956-190422",
+     "title": "Bridging the macro and the micro by considering the meso: Reflections on the fractal nature of resilience",
+     "year": "2014",
+     "cited_by": 85
+    },
+    {
+     "doi": "10.1023/b:mcbi.0000009867.54552.09",
+     "title": "The fractal architecture of cytoplasmic organization: Scaling, kinetics and emergence in metabolic networks",
+     "year": "2004",
+     "cited_by": 45
+    },
+    {
+     "doi": "10.1016/j.chaos.2007.01.130",
+     "title": "An analytical process of the spatio-temporal evolution of urban systems based on allometric and fractal ideas",
+     "year": "2009",
+     "cited_by": 41
+    },
+    {
+     "doi": "10.1016/j.chaos.2019.05.029",
+     "title": "Fractal dimensions derived from spatial allometric scaling of urban form",
+     "year": "2019",
+     "cited_by": 37
+    },
+    {
+     "doi": "10.4324/9781315755090",
+     "title": "Organization development and change theory: Managing fractal organizing processes",
+     "year": "2015",
+     "cited_by": 22
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_graph_theory",
+   "label": "Graph theory",
+   "aliases": [
+    "graph theory",
+    "random graph",
+    "graph-theoretic"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 0,
+   "first_year": null,
+   "last_year": null,
+   "exemplar_works": [],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_physics_of_complex_systems",
+   "label": "Physics of complex systems",
+   "aliases": [
+    "statistical physics",
+    "econophysics",
+    "physics of complex system",
+    "power law distribution"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 1,
+   "first_year": 2007,
+   "last_year": 2007,
+   "exemplar_works": [
+    {
+     "doi": "10.1142/6253",
+     "title": "Foundations of Complex Systems: Nonlinear Dynamics, Statistical Physics, Information and Prediction",
+     "year": "2007",
+     "cited_by": 133
+    }
+   ],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_scaling_laws",
+   "label": "Scaling laws",
+   "aliases": [
+    "scaling law",
+    "allometric scaling",
+    "power-law scaling"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 3,
+   "first_year": 2014,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.1016/j.chaos.2014.04.017",
+     "title": "An allometric scaling relation based on logistic growth of cities",
+     "year": "2014",
+     "cited_by": 38
+    },
+    {
+     "doi": "10.1016/j.chaos.2019.05.029",
+     "title": "Fractal dimensions derived from spatial allometric scaling of urban form",
+     "year": "2019",
+     "cited_by": 37
+    },
+    {
+     "doi": "10.1002/9781394441594.ch8",
+     "title": "Intra-Urban Radial Scaling Laws",
+     "year": "2026",
+     "cited_by": 0
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_synergetics",
+   "label": "Synergetics",
+   "aliases": [
+    "synergetics",
+    "order parameter",
+    "slaving principle"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 1,
+   "first_year": 2004,
+   "last_year": 2004,
+   "exemplar_works": [],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_swarm_behaviour",
+   "label": "Swarm behaviour",
+   "aliases": [
+    "swarm intelligence",
+    "swarm behaviour",
+    "swarm behavior",
+    "flocking",
+    "stigmergy",
+    "ant colony optimi"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 2,
+   "first_year": 2025,
+   "last_year": 2025,
+   "exemplar_works": [
+    {
+     "doi": "10.1201/9781003585527-6",
+     "title": "Swarm Intelligence, Actor Network Theory, and Complex Systems: Future Strategies of AI Inclusion and Techno-ethics",
+     "year": "2025",
+     "cited_by": 0
+    },
+    {
+     "doi": "10.1007/978-3-031-82790-7_2",
+     "title": "Understanding the Roots of Swarm Intelligence in Defence to Find the Path ForwardA Scientometric Study of Autonomous Sys",
+     "year": "2025",
+     "cited_by": 0
+    }
+   ],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_multi_scale_modelling",
+   "label": "Multi-scale modelling",
+   "aliases": [
+    "multi-scale model",
+    "multiscale model",
+    "multi-scale simulation"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 6,
+   "first_year": 2009,
+   "last_year": 2022,
+   "exemplar_works": [
+    {
+     "doi": "10.1016/j.shpsc.2016.12.003",
+     "title": "Biology meets physics: Reductionism and multi-scale modeling of morphogenesis",
+     "year": "2017",
+     "cited_by": 65
+    },
+    {
+     "doi": "10.1016/j.compchemeng.2008.11.015",
+     "title": "An ontological conceptualization of multiscale models",
+     "year": "2009",
+     "cited_by": 59
+    },
+    {
+     "doi": "10.1007/s10439-011-0363-9",
+     "title": "Ensuring congruency in multiscale modeling: Towards linking agent based and continuum biomechanical models of arterial a",
+     "year": "2011",
+     "cited_by": 37
+    },
+    {
+     "doi": "10.1016/j.matbio.2020.04.003",
+     "title": "Multi-scale models of lung fibrosis",
+     "year": "2020",
+     "cited_by": 30
+    },
+    {
+     "doi": "10.1093/bioinformatics/btac049",
+     "title": "Vivarium: An interface and engine for integrative multiscale modeling in computational biology",
+     "year": "2022",
+     "cited_by": 28
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_robustness_and_control",
+   "label": "Robustness and control",
+   "aliases": [
+    "robustness",
+    "robust control",
+    "controllability"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 7,
+   "first_year": 2006,
+   "last_year": 2024,
+   "exemplar_works": [
+    {
+     "doi": "10.1080/13669877.2019.1694964",
+     "title": "Conceptualising redundancy and flexibility towards supply chain robustness and resilience",
+     "year": "2020",
+     "cited_by": 126
+    },
+    {
+     "doi": "10.1186/1752-0509-3-35",
+     "title": "Information processing in the transcriptional regulatory network of yeast: Functional robustness",
+     "year": "2009",
+     "cited_by": 26
+    },
+    {
+     "doi": "10.1007/978-1-59745-531-2_18",
+     "title": "Efficiency, robustness, and stochasticity of gene regulatory networks in systems biology: λ switch as a working example",
+     "year": "2007",
+     "cited_by": 14
+    },
+    {
+     "doi": "10.1002/jsc.2559",
+     "title": "Layered structures of robustness and resilience: Evidence from cybersecurity projects for critical infrastructures in Ce",
+     "year": "2023",
+     "cited_by": 9
+    },
+    {
+     "doi": "10.1109/MCS.2006.1615277",
+     "title": "Mathematical systems theory I: Modelling, state space analysis stability and robustness",
+     "year": "2006",
+     "cited_by": 3
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_computational_complexity_theory",
+   "label": "Computational complexity theory",
+   "aliases": [
+    "computational complexity",
+    "np-complete",
+    "algorithmic complexity",
+    "kolmogorov complexity"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 0,
+   "first_year": null,
+   "last_year": null,
+   "exemplar_works": [],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_genetic_algorithms",
+   "label": "Genetic algorithms",
+   "aliases": [
+    "genetic algorithm",
+    "evolutionary computation",
+    "evolutionary algorithm"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 0,
+   "first_year": null,
+   "last_year": null,
+   "exemplar_works": [],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_connectionism",
+   "label": "Connectionism",
+   "aliases": [
+    "connectionis",
+    "parallel distributed processing",
+    "perceptron"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 2,
+   "first_year": 1991,
+   "last_year": 2009,
+   "exemplar_works": [
+    {
+     "doi": "10.1016/0167-9457(91)90015-P",
+     "title": "Self-organization in connectionist models: Associative memory, dissipative structures, and thermodynamic law",
+     "year": "1991",
+     "cited_by": 7
+    },
+    {
+     "doi": "10.1093/acprof:oso/9780195300598.003.0006",
+     "title": "Timescales of Change in Connectionist and Dynamical Systems Approaches to Learning and Development",
+     "year": "2009",
+     "cited_by": 5
+    }
+   ],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_robotics_and_multi_agent_systems",
+   "label": "Robotics and multi-agent systems",
+   "aliases": [
+    "swarm robotic",
+    "multi-robot",
+    "autonomous agent"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 0,
+   "first_year": null,
+   "last_year": null,
+   "exemplar_works": [],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_data_mining",
+   "label": "Data mining",
+   "aliases": [
+    "data mining",
+    "knowledge discovery in database",
+    "pattern discovery"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 0,
+   "first_year": null,
+   "last_year": null,
+   "exemplar_works": [],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_big_data_and_data_science",
+   "label": "Big data and data science",
+   "aliases": [
+    "big data",
+    "data science",
+    "e-science"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 29,
+   "first_year": 2012,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.1016/j.ijpe.2014.04.018",
+     "title": "Data quality for data science, predictive analytics, and big data in supply chain management: An introduction to the pro",
+     "year": "2014",
+     "cited_by": 788
+    },
+    {
+     "doi": "10.1016/j.ijpe.2014.12.036",
+     "title": "The value of big data in servitization",
+     "year": "2015",
+     "cited_by": 470
+    },
+    {
+     "doi": "10.1016/j.ijinfomgt.2018.07.005",
+     "title": "Management theory and big data literature: From a review to a research agenda",
+     "year": "2018",
+     "cited_by": 148
+    },
+    {
+     "doi": "10.1016/j.shpsc.2011.10.007",
+     "title": "Scientific perspectivism: A philosopher of science's response to the challenge of big data biology",
+     "year": "2012",
+     "cited_by": 118
+    },
+    {
+     "doi": "10.3390/make5030054",
+     "title": "Defining a Digital Twin: A Data Science-Based Unification",
+     "year": "2023",
+     "cited_by": 57
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_computational_social_science",
+   "label": "Computational social science",
+   "aliases": [
+    "computational social science",
+    "social simulation",
+    "computational sociolog"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 4,
+   "first_year": 2015,
+   "last_year": 2024,
+   "exemplar_works": [
+    {
+     "doi": "10.3389/fphy.2015.00078",
+     "title": "Mechanistic models in computational social science",
+     "year": "2015",
+     "cited_by": 23
+    },
+    {
+     "doi": "10.11821/dlxb202401012",
+     "title": "Rethinking the theoretical genesis, research paradigm and research agenda of Geo-computational Social Sciences; [社会地理计算的",
+     "year": "2024",
+     "cited_by": 8
+    },
+    {
+     "doi": "10.1093/oxfordhb/9780199338801.013.27",
+     "title": "Simulating crime event decision making: Agent-based social simulations in criminology",
+     "year": "2017",
+     "cited_by": 3
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_digital_social_research",
+   "label": "Digital social research",
+   "aliases": [
+    "digital method",
+    "digital sociolog",
+    "digital social science",
+    "social media data"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 0,
+   "first_year": null,
+   "last_year": null,
+   "exemplar_works": [],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_case_based_complexity",
+   "label": "Case-based complexity",
+   "aliases": [
+    "qualitative comparative analysis",
+    "case-based method",
+    "configurational compar",
+    "fuzzy set qca",
+    "case-based complexity"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 5,
+   "first_year": 2020,
+   "last_year": 2025,
+   "exemplar_works": [
+    {
+     "doi": "10.1016/j.ijinfomgt.2021.102310",
+     "title": "Fuzzy-set Qualitative Comparative Analysis (fsQCA): Guidelines for research practice in Information Systems and marketin",
+     "year": "2021",
+     "cited_by": 2168
+    },
+    {
+     "doi": "10.1016/j.indmarman.2019.10.006",
+     "title": "Value propositions as market-shaping devices: A qualitative comparative analysis",
+     "year": "2020",
+     "cited_by": 73
+    },
+    {
+     "doi": "10.4324/9781003107774-27",
+     "title": "Fuzzy-set qualitative comparative analysis: Introduction to a configurational approach",
+     "year": "2023",
+     "cited_by": 13
+    },
+    {
+     "doi": "10.3390/ijerph20095662",
+     "title": "Individual and Institutional Factors Contribute to Research Capacity Building for Early-Stage Investigators from Groups ",
+     "year": "2023",
+     "cited_by": 5
+    },
+    {
+     "doi": "10.1111/ejed.70188",
+     "title": "How Can the Diffusion of Digital Education Policies Be Advanced in Regions With Diverse Educational Conditions?—Qualitat",
+     "year": "2025",
+     "cited_by": 0
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_qualitative_and_mixed_methods",
+   "label": "Qualitative and mixed methods",
+   "aliases": [
+    "mixed methods",
+    "qualitative complexity",
+    "interdisciplinary method"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 3,
+   "first_year": 2006,
+   "last_year": 2021,
+   "exemplar_works": [
+    {
+     "doi": "10.4324/9780203366837",
+     "title": "Qualitative complexity: Ecology, cognitive processes and the re-emergence of structures in post-humanist social theory",
+     "year": "2006",
+     "cited_by": 89
+    },
+    {
+     "doi": "10.1016/j.ienj.2021.100996",
+     "title": "Impact of COVID-19 on paramedicine students: A mixed methods study",
+     "year": "2021",
+     "cited_by": 18
+    },
+    {
+     "doi": "10.1186/1471-2288-14-94",
+     "title": "Utilising a collective case study system theory mixed methods approach: A rural health example",
+     "year": "2014",
+     "cited_by": 13
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_visual_complexity",
+   "label": "Visual complexity",
+   "aliases": [
+    "data visualisation",
+    "data visualization",
+    "information visuali",
+    "visual analytics"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 1,
+   "first_year": 2018,
+   "last_year": 2018,
+   "exemplar_works": [],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_systems_biology",
+   "label": "Systems biology",
+   "aliases": [
+    "systems biology",
+    "gene regulatory network",
+    "metabolic network"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 144,
+   "first_year": 2002,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.1038/nature01254",
+     "title": "Computational systems biology",
+     "year": "2002",
+     "cited_by": 1779
+    },
+    {
+     "doi": "10.1016/j.mib.2004.04.012",
+     "title": "Metabolomics and systems biology: Making sense of the soup",
+     "year": "2004",
+     "cited_by": 485
+    },
+    {
+     "doi": "10.1371/journal.pmed.0030208",
+     "title": "The limits of reductionism in medicine: Could systems biology offer an alternative?",
+     "year": "2006",
+     "cited_by": 418
+    },
+    {
+     "doi": "10.1038/nrmicro1177",
+     "title": "Metabolic footprinting and systems biology: The medium is the message",
+     "year": "2005",
+     "cited_by": 378
+    },
+    {
+     "doi": "10.1098/rsif.2013.0505",
+     "title": "Reverse engineering and identification in systems biology: Strategies, perspectives and challenges",
+     "year": "2014",
+     "cited_by": 204
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_computational_biology_and_chemistry",
+   "label": "Computational biology and chemistry",
+   "aliases": [
+    "computational biology",
+    "bioinformatics",
+    "computational chemistry",
+    "protein folding"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 3,
+   "first_year": 2010,
+   "last_year": 2022,
+   "exemplar_works": [
+    {
+     "doi": "10.1155/2010/268925",
+     "title": "Systems biology: The next frontier for bioinformatics",
+     "year": "2010",
+     "cited_by": 63
+    },
+    {
+     "doi": "10.1093/bioinformatics/btac049",
+     "title": "Vivarium: An interface and engine for integrative multiscale modeling in computational biology",
+     "year": "2022",
+     "cited_by": 28
+    },
+    {
+     "doi": "10.22394/0869-5377-2020-3-1-18",
+     "title": "Two histories of bioinformatics: Data science vs life science",
+     "year": "2019",
+     "cited_by": 0
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_biosystems_engineering",
+   "label": "Biosystems engineering",
+   "aliases": [
+    "biosystems engineering",
+    "synthetic biology",
+    "bio-inspired"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 3,
+   "first_year": 2008,
+   "last_year": 2024,
+   "exemplar_works": [
+    {
+     "doi": "10.1007/s43683-024-00151-9",
+     "title": "Undergraduate Students’ Engineering Systems Thinking in Synthetic Biology Design: A Qualitative Descriptive Study",
+     "year": "2024",
+     "cited_by": 1
+    },
+    {
+     "doi": "10.4018/978-1-60960-195-9.ch806",
+     "title": "Synthetic biology as a proof of systems biology",
+     "year": "2010",
+     "cited_by": 0
+    },
+    {
+     "doi": "10.4018/978-1-60566-076-9.ch005",
+     "title": "Synthetic Biology as a Proof of Systems Biology",
+     "year": "2008",
+     "cited_by": 0
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_complexity_and_psychology",
+   "label": "Complexity and psychology",
+   "aliases": [
+    "complexity and psychology",
+    "psychological complexity",
+    "dynamic systems approach to development"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 0,
+   "first_year": null,
+   "last_year": null,
+   "exemplar_works": [],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_ecological_systems_theory",
+   "label": "Ecological systems theory",
+   "aliases": [
+    "ecological systems theory",
+    "bioecological model",
+    "ecological psychology"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 1,
+   "first_year": 2025,
+   "last_year": 2025,
+   "exemplar_works": [
+    {
+     "doi": "10.1093/oso/9780198879145.003.0004",
+     "title": "Digital Forms of Exclusion, Big Data, and Measurement of UN Sustainable Development Goals in Africa: An Ecological Syste",
+     "year": "2025",
+     "cited_by": 0
+    }
+   ],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_complexity_in_management_and_planning",
+   "label": "Complexity in management and planning",
+   "aliases": [
+    "complexity in management",
+    "complexity and management",
+    "complexity leadership",
+    "complex responsive process"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 1,
+   "first_year": 2011,
+   "last_year": 2011,
+   "exemplar_works": [
+    {
+     "doi": "10.1016/B978-0-444-52076-0.50025-0",
+     "title": "Complexity and Management",
+     "year": "2011",
+     "cited_by": 5
+    }
+   ],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_economic_complexity",
+   "label": "Economic complexity",
+   "aliases": [
+    "economic complexity",
+    "complexity economics",
+    "agent-based computational economics"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 4,
+   "first_year": 2010,
+   "last_year": 2021,
+   "exemplar_works": [
+    {
+     "doi": "10.1016/j.jebo.2010.03.012",
+     "title": "Is a transdisciplinary perspective on economic complexity possible?",
+     "year": "2010",
+     "cited_by": 36
+    },
+    {
+     "doi": "10.1093/cje/beab017",
+     "title": "Linking complexity economics and systems thinking, with illustrative discussions of urban sustainability",
+     "year": "2021",
+     "cited_by": 9
+    },
+    {
+     "doi": "10.4324/9780429021510-3",
+     "title": "From complexity science to complexity economics",
+     "year": "2019",
+     "cited_by": 6
+    },
+    {
+     "doi": "10.4018/978-1-7998-1037-7.ch005",
+     "title": "Complexity economics and innovation systems: Mersin Regional Innovation Strategy (RIS) plus project from perspective of ",
+     "year": "2019",
+     "cited_by": 0
+    }
+   ],
+   "status": "evidenced"
+  },
+  {
+   "id": "concept_complexity_and_globalisation",
+   "label": "Complexity and globalisation",
+   "aliases": [
+    "global network society",
+    "globalisation and complexity",
+    "globalization and complexity",
+    "global system"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 2,
+   "first_year": 2002,
+   "last_year": 2019,
+   "exemplar_works": [
+    {
+     "doi": "10.1073/pnas.192558999",
+     "title": "Coordinate regulation of energy transduction modules in Halobacterium sp. analyzed by a global systems approach",
+     "year": "2002",
+     "cited_by": 122
+    },
+    {
+     "doi": "10.1016/C2018-0-00943-3",
+     "title": "The theory of endobiogeny: Volume 1: Global systems thinking and biological modeling for clinical medicine",
+     "year": "2019",
+     "cited_by": 5
+    }
+   ],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_spatial_and_geographical_complexity",
+   "label": "Spatial and geographical complexity",
+   "aliases": [
+    "spatial complexity",
+    "geographic information system",
+    "urban complexity",
+    "cities and complexity",
+    "spatial simulation"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 2,
+   "first_year": 2010,
+   "last_year": 2019,
+   "exemplar_works": [
+    {
+     "doi": "10.1089/tmj.2010.0002",
+     "title": "Determining accessibility to dermatologists and teledermatology locations in Kentucky: Demonstration of an innovative ge",
+     "year": "2010",
+     "cited_by": 7
+    },
+    {
+     "doi": "10.1088/1755-1315/368/1/012038",
+     "title": "Multi-scale soil-landscape maps as the basis of geographic information systems for soil melioration",
+     "year": "2019",
+     "cited_by": 5
+    }
+   ],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_complexity_policy",
+   "label": "Complexity policy",
+   "aliases": [
+    "complexity and policy",
+    "complexity policy",
+    "policy complexity",
+    "complexity-informed policy"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 0,
+   "first_year": null,
+   "last_year": null,
+   "exemplar_works": [],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_complexity_political_science",
+   "label": "Complexity political science",
+   "aliases": [
+    "political complexity",
+    "complexity political science",
+    "governance complexity"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 0,
+   "first_year": null,
+   "last_year": null,
+   "exemplar_works": [],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_intersectionality",
+   "label": "Intersectionality",
+   "aliases": [
+    "intersectionalit",
+    "intersecting inequalit"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 0,
+   "first_year": null,
+   "last_year": null,
+   "exemplar_works": [],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_complexity_in_health_and_healthcare",
+   "label": "Complexity in health and healthcare",
+   "aliases": [
+    "complexity in healthcare",
+    "complex intervention",
+    "health system complexity",
+    "public health complexity"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 0,
+   "first_year": null,
+   "last_year": null,
+   "exemplar_works": [],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_complexity_in_education",
+   "label": "Complexity in education",
+   "aliases": [
+    "complexity in education",
+    "educational complexity",
+    "complexity and learning"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 0,
+   "first_year": null,
+   "last_year": null,
+   "exemplar_works": [],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_philosophy_of_complexity",
+   "label": "Philosophy of complexity",
+   "aliases": [
+    "philosophy of complexity",
+    "critical complexity",
+    "general complexity",
+    "restricted complexity"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 2,
+   "first_year": 2011,
+   "last_year": 2018,
+   "exemplar_works": [
+    {
+     "doi": "10.emerg/10.17357.c9734094d98458109d25b79d546318af",
+     "title": "General complexity: A philosophical and critical perspective",
+     "year": "2018",
+     "cited_by": 21
+    },
+    {
+     "doi": "10.1007/s11422-011-9356-0",
+     "title": "Playful and mindful interactions in the recursive adaptations of the zone of proximal development: A critical complexity",
+     "year": "2011",
+     "cited_by": 3
+    }
+   ],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_applied_complexity",
+   "label": "Applied complexity",
+   "aliases": [
+    "applied complexity",
+    "complexity in practice",
+    "complexity-informed"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 1,
+   "first_year": 2018,
+   "last_year": 2018,
+   "exemplar_works": [
+    {
+     "doi": "10.1002/9781119378952.ch10",
+     "title": "Applied complexity science: Enabling emergence through heuristics and simulations",
+     "year": "2018",
+     "cited_by": 5
+    }
+   ],
+   "status": "candidate"
+  },
+  {
+   "id": "concept_systems_science",
+   "label": "Systems science",
+   "aliases": [
+    "systems science",
+    "system science"
+   ],
+   "seeded_from": "castellani_gerrits_2021",
+   "work_count": 90,
+   "first_year": 1974,
+   "last_year": 2026,
+   "exemplar_works": [
+    {
+     "doi": "10.2105/AJPH.2015.302944",
+     "title": "Integrating systems science and community-based participatory research to achieve health equity",
+     "year": "2016",
+     "cited_by": 145
+    },
+    {
+     "doi": "10.1097/ACM.0000000000001177",
+     "title": "Health Systems Science Curricula in Undergraduate Medical Education: Identifying and Defining a Potential Curricular Fra",
+     "year": "2017",
+     "cited_by": 143
+    },
+    {
+     "doi": "10.1002/sres.2215",
+     "title": "Understanding systems science: A visual and integrative approach",
+     "year": "2013",
+     "cited_by": 96
+    },
+    {
+     "doi": "10.1098/rspb.2017.2360",
+     "title": "How new concepts become universal scientific approaches: Insights from citation network analysis of agent-based complex ",
+     "year": "2018",
+     "cited_by": 51
+    },
+    {
+     "doi": "10.1186/s12939-015-0205-8",
+     "title": "Social determinants of health inequalities: Towards a theoretical perspective using systems science",
+     "year": "2015",
+     "cited_by": 50
+    }
+   ],
+   "status": "evidenced"
   }
  ]
 }
