@@ -30,7 +30,7 @@
     "public_entries": 581,
     "all_nodes": 691,
     "all_edges": 1826,
-    "sources": 205,
+    "sources": 206,
     "claims": 34,
     "evidence_records": 37,
     "profiles": 123,
@@ -66,7 +66,7 @@
     },
     "sources": {
       "before": 153,
-      "after": 205
+      "after": 206
     },
     "semantic_connected_entries": {
       "before": 329,
@@ -2932,7 +2932,7 @@
     "after": {
       "nodes": 691,
       "edges": 1826,
-      "sources": 205,
+      "sources": 206,
       "profiles": 123,
       "journeys": 21,
       "exact_duplicate_triples": 0,

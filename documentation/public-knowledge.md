@@ -13264,7 +13264,7 @@ Completion test: Repeatable archival ingestion with typed provenance and no conf
 
 ## Prior maps and bodies of knowledge
 
-Status: registered comparator pass pending
+Status: one comparator reviewed programme continuing
 Completion test: Public comparison of purpose, boundary, categories, lines, evidence, strengths and failures.
 
 ## Practitioner influence constellations
