@@ -34,48 +34,48 @@ and 34 run between them. The strongest are systems science to general system
 theory (169 references, 87 citing works) and systems biology to general system
 theory (161 references, 137 citing works).
 
-### 23 did not, and the pattern is the finding
+### 23 did not — and then six topic-scoped exports were added
 
-Twelve returned **zero** matching works: graph theory, computational complexity
-theory, genetic algorithms, robotics and multi-agent systems, data mining,
-digital social research, complexity and psychology, complexity policy,
-complexity political science, intersectionality, complexity in health and
-healthcare, complexity in education.
+On the author-seeded corpus, 23 of Castellani's areas fell below threshold and
+twelve returned zero works: graph theory, computational complexity theory,
+genetic algorithms, robotics and multi-agent systems, data mining, digital
+social research, complexity and psychology, complexity policy, complexity
+political science, intersectionality, complexity in health and healthcare,
+complexity in education.
 
-Eleven more returned one or two: swarm behaviour, connectionism, complexity and
-globalisation, spatial and geographical complexity, philosophy of complexity,
-physics of complex systems, synergetics, visual complexity, ecological systems
-theory, complexity in management and planning, applied complexity.
+That list was almost exactly Castellani's applied, computational and
+social-science strands, and it measured where our sampling was blind rather than
+where the literature was thin. Six topic-scoped exports were run against it,
+taking the corpus from 34,883 documents to 85,832 and from 6.18M reference rows
+to 13.79M.
 
-That list is almost exactly Castellani's applied, computational and
-social-science strands. It is not evidence that those literatures are small —
-several are very large. It is a precise measurement of where **our corpus** is
-blind, and the cause is known: the Scopus corpus was assembled from author-name
-batches seeded on the *Map of Systemic Evolution*, so it collected the people
-around systems and cybernetics and never went looking for complexity in health,
-education or policy.
+The gap closed almost entirely. Of the twelve that returned nothing, nine are
+now on the map:
 
-Castellani's map is therefore doing exactly what a comparator should: it found a
-hole in our sampling that our own data could not reveal.
+| Area | Works | Was |
+| --- | --- | --- |
+| Swarm behaviour | 1,980 | 2 |
+| Intersectionality | 927 | 0 |
+| Robotics and multi-agent systems | 238 | 0 |
+| Genetic algorithms | 228 | 0 |
+| Graph theory | 99 | 0 |
+| Data mining | 51 | 0 |
+| Connectionism | 30 | 0 |
+| Complexity in health and healthcare | 27 | 0 |
+| Computational complexity theory | 7 | 0 |
 
-### Closing it
+Swarm behaviour and intersectionality are now among the largest literatures on
+the map. Neither existed on it a build ago.
 
-Topic-scoped Scopus exports, not author-scoped. One query per missing area:
+Four of Castellani's areas remain absent: complexity policy, complexity
+political science, complexity and psychology, and complexity in education. Two
+of those returned exactly two works, so they are close. Whether the remainder is
+genuine absence or too-narrow aliases is an open, checkable question — see
+`LIMITATIONS.md` section 4.
 
-```
-TITLE-ABS-KEY("complexity" AND "public health") AND PUBYEAR AFT 1989
-TITLE-ABS-KEY("qualitative comparative analysis" OR "case-based method")
-TITLE-ABS-KEY("complexity" AND "education policy")
-TITLE-ABS-KEY("intersectionality" AND ("complexity" OR "system"))
-TITLE-ABS-KEY("agent-based" AND "public policy")
-TITLE-ABS-KEY("swarm intelligence" OR "stigmergy")
-TITLE-ABS-KEY("genetic algorithm" AND "complex system")
-TITLE-ABS-KEY("scale-free network" OR "small-world network")
-```
-
-Export with the References column, run through `scopus_shrink.py`, and rebuild.
-The concepts are already in the vocabulary, so they will appear the moment the
-literature does.
+The wider lesson is the one worth keeping: a comparator map found a hole in our
+sampling that our own data could not reveal, we sampled against it, and the map
+grew from 43 evidenced concepts to 89.
 
 ## The Map of Systemic Evolution (Schwarz 1996 → Hadorn 2016)
 

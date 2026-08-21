@@ -89,12 +89,17 @@ def main() -> int:
         title, venue = w["title"], w["source_title"]
         if OFF_TOPIC.search(title) or OFF_TOPIC.search(venue):
             continue
-        if not (ON_TOPIC.search(title) or ON_TOPIC.search(venue)):
-            continue
-        on_topic += 1
+        # The vocabulary is the gate. A work is on topic because it matches a
+        # concept we are testing, not because it uses the words this project
+        # happens to associate with systems research. The earlier hand-written
+        # ON_TOPIC filter decided in advance which literatures could be seen,
+        # which made concepts outside its wording - human-computer interaction,
+        # constructivism, variety engineering - structurally invisible however
+        # much literature they had.
         hits = match_concepts(title, concepts)
         if not hits:
             continue
+        on_topic += 1
         work_concepts[w["eid"]] = hits
         yr = int(w["year"]) if w["year"].isdigit() else None
         cited = int(w["cited_by"]) if w["cited_by"].isdigit() else 0
@@ -195,7 +200,7 @@ def main() -> int:
         "concept_count": len(nodes),
         "evidenced_concept_count": sum(1 for n in nodes if n["status"] == "evidenced"),
         "edge_count": len(edges),
-        "on_topic_work_count": on_topic,
+        "concept_matched_work_count": on_topic,
     }
     (OUTP / "concepts.json").write_text(
         json.dumps({"meta": meta, "concepts": nodes}, indent=1, ensure_ascii=False) + "\n",

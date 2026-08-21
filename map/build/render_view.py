@@ -110,8 +110,8 @@ footer b{color:var(--ink);font-weight:500}
   <div class="stats">
     <div class="stat"><b id="sN">0</b><span>Concepts</span></div>
     <div class="stat"><b id="sE">0</b><span>Lines</span></div>
-    <div class="stat"><b>3,071</b><span>Works on topic</span></div>
-    <div class="stat"><b>6.18M</b><span>References scanned</span></div>
+    <div class="stat"><b id="sW">0</b><span>Works matched</span></div>
+    <div class="stat"><b id="sR">13.8M</b><span>References scanned</span></div>
     <div class="stat"><b id="sC">0</b><span>Lines flagged thin</span></div>
   </div>
 </header>
@@ -132,6 +132,7 @@ const DATA=__BLOB__;
 const cv=document.getElementById('cv'),ctx=cv.getContext('2d'),stage=document.getElementById('stage');
 const panel=document.getElementById('panel');
 document.getElementById('sN').textContent=DATA.nodes.length;
+document.getElementById('sW').textContent=(DATA.meta.concept_matched_work_count||0).toLocaleString();
 document.getElementById('sE').textContent=DATA.edges.length;
 document.getElementById('sC').textContent=DATA.edges.filter(e=>e.cc).length;
 
@@ -150,18 +151,29 @@ N.forEach((n,i)=>{const a=2*Math.PI*i/N.length;n.x=W/2+Math.cos(a)*Math.min(W,H)
   n.y=H/2+Math.sin(a)*Math.min(W,H)*0.32;n.vx=0;n.vy=0});
 
 function tick(){
+  // Cooling: strong early moves, small late ones, so the layout settles rather
+  // than oscillating. Without it 1,850 edges pump energy in faster than damping
+  // takes it out and the graph flies apart.
+  const alpha=Math.max(0.06,1-frames/400);
   for(let i=0;i<N.length;i++){const p=N[i];
     for(let j=i+1;j<N.length;j++){const q=N[j];
       let dx=q.x-p.x,dy=q.y-p.y,d2=dx*dx+dy*dy||1,d=Math.sqrt(d2);
-      const f=(9000+140*N.length)/d2;const ux=dx/d,uy=dy/d;
+      const f=Math.min(40,(9000+140*N.length)/d2)*alpha;
+      const ux=dx/d,uy=dy/d;
       p.vx-=ux*f;p.vy-=uy*f;q.vx+=ux*f;q.vy+=uy*f;}}
   E.forEach(e=>{if(!e.a||!e.b)return;
     let dx=e.b.x-e.a.x,dy=e.b.y-e.a.y,d=Math.sqrt(dx*dx+dy*dy)||1;
-    const k=0.0011*Math.log(1+e.w),f=(d-210)*k,ux=dx/d,uy=dy/d;
-    e.a.vx+=ux*f;e.a.vy+=uy*f;e.b.vx-=ux*f;e.b.vy-=uy*f});
+    // Divide by each endpoint's degree so a hub with 200 lines is not dragged
+    // 200 times harder than a leaf with one.
+    const k=0.02*Math.log(1+e.w)*alpha,f=(d-210)*k,ux=dx/d,uy=dy/d;
+    const fa=f/Math.sqrt(e.a.deg||1),fb=f/Math.sqrt(e.b.deg||1);
+    e.a.vx+=ux*fa;e.a.vy+=uy*fa;e.b.vx-=ux*fb;e.b.vy-=uy*fb});
+  const CAP=14;
   N.forEach(n=>{n.vx+=(W/2-n.x)*0.0011;n.vy+=(H/2-n.y)*0.0018;
-    n.x+=n.vx*=0.82;n.y+=n.vy*=0.82;
-    });
+    n.vx*=0.80;n.vy*=0.80;
+    const sp=Math.hypot(n.vx,n.vy);
+    if(sp>CAP){n.vx=n.vx/sp*CAP;n.vy=n.vy/sp*CAP}
+    n.x+=n.vx;n.y+=n.vy;});
 }
 function css(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim()}
 function draw(){
