@@ -8,6 +8,21 @@ The Necessary Tangle is a public, navigable account of ideas, people, methods, p
 
 Curated by [Benjamin P Taylor](https://www.antlerboy.com/).
 
+## The Counted Map
+
+A separate piece of work in `map/`, not part of the atlas: a concept map of
+systems, cybernetics and complexity built from bibliographic evidence. A concept appears because it has a literature; a line
+appears because that literature cites across it. Both are counted rather than
+asserted, and every line carries the citations that support it.
+
+**[Open the map](https://claude.ai/code/artifact/d8488f1c-3d9b-4c09-92bd-3bc3df776749)** — 89 concepts, 1,850 lines, built from 85,832
+documents and 13,792,287 cited references. The page is private to the curator's
+Claude account; it is not a public link.
+
+Results as a table: [`map/RESULTS.md`](map/RESULTS.md). Method and rebuild
+instructions: [`map/SCHEMA.md`](map/SCHEMA.md), [`map/LIMITATIONS.md`](map/LIMITATIONS.md),
+[`map/COMPARISON.md`](map/COMPARISON.md), [`map/REPRODUCE.md`](map/REPRODUCE.md).
+
 ## Public site
 
 **https://transduction.systems/**
