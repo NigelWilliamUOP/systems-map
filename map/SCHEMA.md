@@ -73,7 +73,18 @@ count, so a single author citing themselves cannot create a line.
 
 ## Rights
 
-Scopus records are licensed and not redistributable. Only counts, DOIs, years
-and concept names derived from them enter `map/data/`. No abstract, keyword list
-or Scopus metadata field is committed. The build reads the corpus from a path
-given at run time; the corpus itself is never committed.
+Scopus records are licensed and not redistributable. What enters `map/data/` is
+counts, DOIs, years, concept names, and **the matched cited-reference string for
+each piece of evidence** — currently 9,280 of them.
+
+That last item is a deliberate decision by the curator, recorded here because an
+earlier draft of this section claimed the opposite. A cited reference is
+bibliographic fact — author, title, journal, year — rather than authored content
+such as an abstract, and keeping it is what lets a reader see at a glance what a
+line rests on instead of resolving a DOI to find out. Checkability is the
+map's whole argument, so the strings stay.
+
+What still never enters `map/data/`: abstracts, author or index keywords,
+affiliations, funding text, or any other Scopus field. The validator fails the
+build if one appears. The build reads the corpus from a path given at run time;
+the corpus itself is never committed.
