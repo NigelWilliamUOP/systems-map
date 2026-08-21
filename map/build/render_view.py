@@ -292,3 +292,27 @@ out = ROOT / "map" / "view.html"
 out.write_text(page, encoding="utf-8")
 print(f"wrote {out.relative_to(ROOT)}  {out.stat().st_size/1024:.0f} KB  "
       f"{len(concepts)} concepts, {len(edges)} edges")
+
+# The same page for GitHub Pages. view.html is written as an artifact body, which
+# a host wraps in a document skeleton; a file served straight off Pages gets no
+# such wrapper, so add one here rather than letting the two copies drift apart.
+head, _, body = page.partition("</style>")
+site = ROOT / "docs" / "counted-map.html"
+site.write_text(
+    '<!doctype html>\n'
+    '<html lang="en">\n'
+    '<head>\n'
+    '<meta charset="utf-8">\n'
+    '<meta name="viewport" content="width=device-width,initial-scale=1">\n'
+    '<meta name="description" content="A concept map of systems, cybernetics and '
+    f'complexity built from bibliographic evidence: {len(concepts)} concepts and '
+    f'{len(edges)} lines, each line carrying the citations that support it.">\n'
+    '<link rel="icon" href="favicon.svg">\n'
+    f'{head}</style>\n'
+    '</head>\n'
+    f'<body>{body}\n'
+    '</body>\n'
+    '</html>\n',
+    encoding="utf-8",
+)
+print(f"wrote {site.relative_to(ROOT)}  {site.stat().st_size/1024:.0f} KB")

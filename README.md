@@ -15,9 +15,13 @@ systems, cybernetics and complexity built from bibliographic evidence. A concept
 appears because that literature cites across it. Both are counted rather than
 asserted, and every line carries the citations that support it.
 
-**[Open the map](https://claude.ai/code/artifact/d8488f1c-3d9b-4c09-92bd-3bc3df776749)** — 89 concepts, 1,850 lines, built from 85,832
-documents and 13,792,287 cited references. The page is private to the curator's
-Claude account; it is not a public link.
+**[Open the map](https://transduction.systems/counted-map.html)** — 89 concepts,
+1,850 lines, built from 85,832 documents and 13,792,287 cited references. Click
+any line to read the citations under it.
+
+The same page offline, self-contained and needing no network:
+[`map/view.html`](map/view.html). Both copies are written by
+`map/build/render_view.py`; neither is edited by hand.
 
 Results as a table: [`map/RESULTS.md`](map/RESULTS.md). Method and rebuild
 instructions: [`map/SCHEMA.md`](map/SCHEMA.md), [`map/LIMITATIONS.md`](map/LIMITATIONS.md),
